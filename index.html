@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="styles.css" rel="stylesheet"/>
+<link href="styles.css?v=2" rel="stylesheet"/>
 </head>
 <body>
 <!-- ============ NAVBAR ============ -->
@@ -20,35 +20,45 @@
 <img alt="KisanSangam Logo" class="navbar__logo-img" src="App Images/logo.jpeg"/>
 <span>KisanSangam</span>
 </a>
-<div class="lang-switcher" id="langSwitcher">
-<button class="lang-switcher__btn active" data-i18n="t_3" data-lang="en">EN</button>
-<button class="lang-switcher__btn" data-i18n="t_4" data-lang="hi">हिं</button>
-<button class="lang-switcher__btn" data-i18n="t_5" data-lang="gu">ગુ</button>
+<ul class="navbar__links" id="navLinks">
+<li><a href="#home" data-i18n="nav_home">Home</a></li>
+<li><a href="#about" data-i18n="nav_about">About</a></li>
+<li><a href="#features" data-i18n="nav_features">Features</a></li>
+<li><a href="#how-it-works" data-i18n="nav_how">How It Works</a></li>
+<li><a href="#why-kisansangam" data-i18n="nav_why">Why Us</a></li>
+<li><a href="#launching-soon" data-i18n="nav_launch">Launching Soon</a></li>
+<li class="navbar__mobile-cta"><a class="btn btn--primary btn--nav" href="#launching-soon" data-i18n="nav_cta">Get Early Access</a></li>
+</ul>
+<div class="navbar__actions">
+<div class="lang-dropdown" id="langDropdown">
+<button aria-expanded="false" aria-haspopup="listbox" class="lang-dropdown__trigger" id="langTrigger" type="button">
+<svg class="lang-dropdown__globe" fill="none" height="16" viewbox="0 0 16 16" width="16"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.3"></circle><ellipse cx="8" cy="8" rx="3.5" ry="6.5" stroke="currentColor" stroke-width="1.3"></ellipse><line stroke="currentColor" stroke-width="1.3" x1="1.5" x2="14.5" y1="8" y2="8"></line></svg>
+<span class="lang-dropdown__label" id="langLabel">EN</span>
+<svg class="lang-dropdown__chevron" fill="none" height="10" viewbox="0 0 10 10" width="10"><path d="M2.5 4L5 6.5L7.5 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"></path></svg>
+</button>
+<ul class="lang-dropdown__menu" id="langMenu" role="listbox">
+<li class="lang-dropdown__option active" data-lang="en" role="option">English</li>
+<li class="lang-dropdown__option" data-lang="hi" role="option">हिन्दी</li>
+<li class="lang-dropdown__option" data-lang="gu" role="option">ગુજરાતી</li>
+</ul>
 </div>
+<a class="btn btn--primary btn--nav navbar__desktop-cta" data-i18n="nav_cta" href="#launching-soon">Get Early Access</a>
 <button aria-label="Toggle navigation" class="navbar__toggle" id="navToggle">
 <span></span><span></span><span></span>
 </button>
-<ul class="navbar__links" id="navLinks">
-<li data-i18n="t_6"><a href="#home">Home</a></li>
-<li data-i18n="t_7"><a href="#about">About</a></li>
-<li data-i18n="t_8"><a href="#features">Features</a></li>
-<li data-i18n="t_9"><a href="#how-it-works">How It Works</a></li>
-<li data-i18n="t_10"><a href="#why-kisansangam">Why Us</a></li>
-<li data-i18n="t_11"><a href="#launching-soon">Launching Soon</a></li>
-<li data-i18n="t_12"><a class="btn btn--primary btn--nav" href="#launching-soon">Get Early Access</a></li>
-</ul>
+</div>
 </div>
 </nav>
 <!-- ============ HERO SECTION ============ -->
 <section class="hero" id="home">
 <div class="hero__bg">
-<img alt="" loading="eager" src="assets/hero-bg.jpg"/>
+<picture><source media="(max-width: 768px)" srcset="assets/image(mobile).png"><img alt="" loading="eager" src="assets/image.png"/></picture>
 <div class="hero__overlay"></div>
 </div>
 <div class="container hero__inner">
 <div class="hero__content anim-fade-up">
 <span class="hero__badge" data-i18n="t_13">AI-Powered Agricultural Ecosystem</span>
-<h1 class="hero__title" data-i18n="t_14">One Digital Platform for<br/>Smarter Farming Decisions</h1>
+<h1 class="hero__title" data-i18n="t_14">One Digital Platform<br/>for Smarter Farming<br/>Decisions</h1>
 <p class="hero__subtitle" data-i18n="t_15">From soil analysis to selling — KisanSangam combines crop recommendation, farming guidance, weather alerts, market prices, profit planning, and complete farm management in one intelligent platform built for Indian farmers.</p>
 <div class="hero__ctas">
 <a class="btn btn--primary btn--lg" data-i18n="t_16" href="#features">Explore Features</a>
@@ -63,7 +73,7 @@
 <div class="phone-mockup phone-mockup--hero">
 <div class="phone-mockup__notch"></div>
 <div class="phone-mockup__screen phone-mockup__screen--img">
-<img alt="KisanSangam Dashboard showing crop recommendations, weather alerts, and market prices" loading="eager" src="App Images/screen-11-dashboard.jpg"/>
+<img alt="KisanSangam Dashboard showing crop recommendations, weather alerts, and market prices" loading="eager" src="App Images/screen-11-dashboard.png"/>
 </div>
 </div>
 <div class="hero__floating-badges">
@@ -88,57 +98,57 @@
 <div class="problems-grid">
 <div class="problem-card anim-fade-up">
 <div class="problem-card__icon">
-<svg fill="none" height="28" viewbox="0 0 28 28" width="28"><rect height="10" rx="2" stroke="currentColor" stroke-width="1.8" width="10" x="2" y="2"></rect><rect height="10" rx="2" stroke="currentColor" stroke-width="1.8" width="10" x="16" y="2"></rect><rect height="10" rx="2" stroke="currentColor" stroke-width="1.8" width="10" x="2" y="16"></rect><rect height="10" rx="2" stroke="currentColor" stroke-dasharray="3 2" stroke-width="1.8" width="10" x="16" y="16"></rect></svg>
-</div>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
+  </div>
 <h3 data-i18n="t_25">Fragmented Information</h3>
 <p data-i18n="t_26">Farming advice, market data, weather, and government schemes are spread across dozens of disconnected sources.</p>
 </div>
 <div class="problem-card anim-fade-up" style="animation-delay: 0.05s">
 <div class="problem-card__icon">
-<svg fill="none" height="28" viewbox="0 0 28 28" width="28"><rect height="4" rx="1" stroke="currentColor" stroke-width="1.8" width="20" x="4" y="20"></rect><rect height="4" rx="1" stroke="currentColor" stroke-width="1.8" width="20" x="4" y="14"></rect><rect height="4" rx="1" stroke="currentColor" stroke-width="1.8" width="20" x="4" y="8"></rect><circle cx="22" cy="6" fill="#D4A843" opacity="0.3" r="4"></circle><path d="M20 6H24M22 4V8" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
-</div>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+  </div>
 <h3 data-i18n="t_27">Complex Soil Data</h3>
 <p data-i18n="t_28">Soil health reports are technical and hard to interpret, leaving farmers unsure about what to do with the results.</p>
 </div>
 <div class="problem-card anim-fade-up" style="animation-delay: 0.1s">
 <div class="problem-card__icon">
-<svg fill="none" height="28" viewbox="0 0 28 28" width="28"><path d="M14 4V8M14 20V24M4 14H8M20 14H24" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><circle cx="14" cy="14" r="5" stroke="currentColor" stroke-width="1.8"></circle><path d="M14 12V14.5L15.5 16" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
-</div>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2"/><path d="M12 20v2"/><path d="M2 12h2"/><path d="M20 12h2"/><circle cx="12" cy="12" r="8"/><path d="M12 15.5c-2.5 0-4-1.5-4-3.5 0-2 4-5.5 4-5.5s4 3.5 4 5.5c0 2-1.5 3.5-4 3.5z"/><path d="M12 15.5V17"/></svg>
+  </div>
 <h3 data-i18n="t_29">Crop Selection Uncertainty</h3>
 <p data-i18n="t_30">Choosing the right crop requires understanding soil, season, water, and market conditions — too much guesswork.</p>
 </div>
 <div class="problem-card anim-fade-up" style="animation-delay: 0.15s">
 <div class="problem-card__icon">
-<svg fill="none" height="28" viewbox="0 0 28 28" width="28"><path d="M6 4H22V24H6V4Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path><path d="M10 10H18M10 14H18M10 18H14" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path><path d="M17 17L21 21" stroke="#D4A843" stroke-linecap="round" stroke-width="1.8"></path></svg>
-</div>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+  </div>
 <h3 data-i18n="t_31">No Complete Guidance</h3>
 <p data-i18n="t_32">Step-by-step farming guidance from sowing to harvesting is rarely available in one accessible place.</p>
 </div>
 <div class="problem-card anim-fade-up" style="animation-delay: 0.2s">
 <div class="problem-card__icon">
-<svg fill="none" height="28" viewbox="0 0 28 28" width="28"><path d="M4 22L10 14L15 18L20 10L24 6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M20 6H24V10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M4 24H24" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
-</div>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><polyline points="7 16 12 11 16 14 21 8"/><polyline points="16 8 21 8 21 13"/></svg>
+  </div>
 <h3 data-i18n="t_33">Unclear Mandi Prices</h3>
 <p data-i18n="t_34">Real-time market prices are hard to access, making it difficult to sell at the right time and right place.</p>
 </div>
 <div class="problem-card anim-fade-up" style="animation-delay: 0.25s">
 <div class="problem-card__icon">
-<svg fill="none" height="28" viewbox="0 0 28 28" width="28"><path d="M6 18C6 18 8 14 14 14C20 14 22 18 22 18" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><path d="M4 22C4 22 7 18 14 18C21 18 24 22 24 22" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><circle cx="14" cy="10" r="4" stroke="currentColor" stroke-width="1.8"></circle><path d="M12 10L14 8L16 10" stroke="currentColor" stroke-linecap="round" stroke-width="1.2"></path></svg>
-</div>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16.326A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 .5 8.973"/><path d="m13 12-3 5h4l-3 5"/></svg>
+  </div>
 <h3 data-i18n="t_35">Weather Risk</h3>
 <p data-i18n="t_36">Unexpected weather events can devastate crops, and timely, location-specific alerts are often missing.</p>
 </div>
 <div class="problem-card anim-fade-up" style="animation-delay: 0.3s">
 <div class="problem-card__icon">
-<svg fill="none" height="28" viewbox="0 0 28 28" width="28"><path d="M8 4H20C21.1 4 22 4.9 22 6V22C22 23.1 21.1 24 20 24H8C6.9 24 6 23.1 6 22V6C6 4.9 6.9 4 8 4Z" stroke="currentColor" stroke-width="1.8"></path><path d="M10 9H18M10 13H18M10 17H15" opacity="0.5" stroke="currentColor" stroke-linecap="round" stroke-width="1.3"></path><path d="M16 20L18 18L20 22" stroke="#D4A843" stroke-linecap="round" stroke-width="1.5"></path></svg>
-</div>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+  </div>
 <h3 data-i18n="t_37">Weak Record-Keeping</h3>
 <p data-i18n="t_38">Most farmers have no easy digital way to track expenses, yields, activities, or farm history for future decisions.</p>
 </div>
 <div class="problem-card anim-fade-up" style="animation-delay: 0.35s">
 <div class="problem-card__icon">
-<svg fill="none" height="28" viewbox="0 0 28 28" width="28"><rect height="8" rx="1.5" stroke="currentColor" stroke-width="1.8" width="8" x="3" y="16"></rect><circle cx="7" cy="20" fill="currentColor" opacity="0.2" r="2"></circle><rect height="8" rx="1.5" stroke="currentColor" stroke-width="1.8" width="8" x="17" y="4"></rect><path d="M11 20H17M21 12V16" stroke="currentColor" stroke-dasharray="3 3" stroke-linecap="round" stroke-width="1.5"></path></svg>
-</div>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+  </div>
 <h3 data-i18n="t_39">Limited Resource Access</h3>
 <p data-i18n="t_40">Finding available machinery, leasing land, or discovering relevant government schemes remains a manual struggle.</p>
 </div>
@@ -168,7 +178,7 @@
 <div class="eco-timeline-icon">🏡</div>
 <div class="eco-timeline-info">
 <h3 data-i18n="t_45">Farm Understanding</h3>
-<p>Build your digital farm profile with location, soil type, and water resources to get personalized guidance.</p>
+<p data-i18n="t_45_desc">Build your digital farm profile with location, soil type, and water resources to get personalized guidance.</p>
 </div>
 </div>
 </div>
@@ -179,7 +189,7 @@
 <div class="eco-timeline-icon">🔬</div>
 <div class="eco-timeline-info">
 <h3 data-i18n="t_46">Soil Analysis</h3>
-<p>Book soil tests or enter lab results to understand nutrient levels and get improvement recommendations.</p>
+<p data-i18n="t_46_desc">Book soil tests or enter lab results to understand nutrient levels and get improvement recommendations.</p>
 </div>
 </div>
 </div>
@@ -190,7 +200,7 @@
 <div class="eco-timeline-icon">🌱</div>
 <div class="eco-timeline-info">
 <h3 data-i18n="t_47">Crop Selection</h3>
-<p>Get AI-powered recommendations for the most suitable and profitable crops for your specific farm conditions.</p>
+<p data-i18n="t_47_desc">Get AI-powered recommendations for the most suitable and profitable crops for your specific farm conditions.</p>
 </div>
 </div>
 </div>
@@ -201,7 +211,7 @@
 <div class="eco-timeline-icon">📋</div>
 <div class="eco-timeline-info">
 <h3 data-i18n="t_48">Cultivation Guidance</h3>
-<p>Follow step-by-step instructions from sowing to harvesting, tailored to your selected crop.</p>
+<p data-i18n="t_48_desc">Follow step-by-step instructions from sowing to harvesting, tailored to your selected crop.</p>
 </div>
 </div>
 </div>
@@ -212,7 +222,7 @@
 <div class="eco-timeline-icon">🌦️</div>
 <div class="eco-timeline-info">
 <h3 data-i18n="t_49">Weather Monitoring</h3>
-<p>Receive location-specific forecasts and timely alerts to protect your crops from sudden weather changes.</p>
+<p data-i18n="t_49_desc">Receive location-specific forecasts and timely alerts to protect your crops from sudden weather changes.</p>
 </div>
 </div>
 </div>
@@ -223,7 +233,7 @@
 <div class="eco-timeline-icon">📊</div>
 <div class="eco-timeline-info">
 <h3 data-i18n="t_50">Market Intelligence</h3>
-<p>Track live mandi prices across regions to decide the best time and place to sell your produce.</p>
+<p data-i18n="t_50_desc">Track live mandi prices across regions to decide the best time and place to sell your produce.</p>
 </div>
 </div>
 </div>
@@ -234,7 +244,7 @@
 <div class="eco-timeline-icon">📱</div>
 <div class="eco-timeline-info">
 <h3 data-i18n="t_51">Farm Management</h3>
-<p>Keep digital records of activities, track expenses, and monitor the overall health of your farm operations.</p>
+<p data-i18n="t_51_desc">Keep digital records of activities, track expenses, and monitor the overall health of your farm operations.</p>
 </div>
 </div>
 </div>
@@ -245,7 +255,7 @@
 <div class="eco-timeline-icon">🩺</div>
 <div class="eco-timeline-info">
 <h3 data-i18n="t_52">Crop Diagnosis</h3>
-<p>Use the AI Crop Doctor to identify diseases or pests from photos and get instant treatment advice.</p>
+<p data-i18n="t_52_desc">Use the AI Crop Doctor to identify diseases or pests from photos and get instant treatment advice.</p>
 </div>
 </div>
 </div>
@@ -256,7 +266,7 @@
 <div class="eco-timeline-icon">🚜</div>
 <div class="eco-timeline-info">
 <h3 data-i18n="t_53">Resource Access</h3>
-<p>Find and rent agricultural equipment from nearby farmers easily through our digital marketplace.</p>
+<p data-i18n="t_53_desc">Find and rent agricultural equipment from nearby farmers easily through our digital marketplace.</p>
 </div>
 </div>
 </div>
@@ -267,7 +277,7 @@
 <div class="eco-timeline-icon">💰</div>
 <div class="eco-timeline-info">
 <h3 data-i18n="t_54">Profit Planning</h3>
-<p>Estimate costs and potential revenue before planting to make financially sound farming decisions.</p>
+<p data-i18n="t_54_desc">Estimate costs and potential revenue before planting to make financially sound farming decisions.</p>
 </div>
 </div>
 </div>
@@ -278,7 +288,7 @@
 <div class="eco-timeline-icon">🏠</div>
 <div class="eco-timeline-info">
 <h3 data-i18n="t_55">Land Leasing</h3>
-<p>Discover available agricultural land for lease or list your own land securely and quickly.</p>
+<p data-i18n="t_55_desc">Discover available agricultural land for lease or list your own land securely and quickly.</p>
 </div>
 </div>
 </div>
@@ -289,7 +299,7 @@
 <div class="eco-timeline-icon">🏛️</div>
 <div class="eco-timeline-info">
 <h3 data-i18n="t_56">Government Support</h3>
-<p>Find eligible agricultural schemes, subsidies, and apply for them with guided assistance.</p>
+<p data-i18n="t_56_desc">Find eligible agricultural schemes, subsidies, and apply for them with guided assistance.</p>
 </div>
 </div>
 </div>
@@ -417,7 +427,7 @@
 <div class="phone-mockup phone-mockup--sm">
 <div class="phone-mockup__notch"></div>
 <div class="phone-mockup__screen phone-mockup__screen--img">
-<img alt="AI Crop Recommendation screen showing top crop matches" loading="lazy" src="App Images/screen-16-top-5-crops.png"/>
+<img alt="AI Crop Recommendation screen showing top crop matches" loading="lazy" src="App Images/screen-16-top-5-crops (1)/screen-16-top-5-crops (1)-1.png"/>
 </div>
 </div>
 </div>
@@ -440,7 +450,7 @@
 <div class="phone-mockup phone-mockup--sm">
 <div class="phone-mockup__notch"></div>
 <div class="phone-mockup__screen phone-mockup__screen--img">
-<img alt="Complete crop farming guide with step-by-step stages" loading="lazy" src="App Images/farm-guide-screen.png"/>
+<img alt="Complete crop farming guide with step-by-step stages" loading="lazy" src="App Images/farm-guide-screen/farm-guide-screen-1.png"/>
 </div>
 </div>
 </div>
@@ -462,7 +472,7 @@
 <div class="phone-mockup phone-mockup--sm">
 <div class="phone-mockup__notch"></div>
 <div class="phone-mockup__screen phone-mockup__screen--img">
-<img alt="Soil Test Center with AI-powered recommendations" loading="lazy" src="App Images/book-soil-test.jpg"/>
+<img alt="Soil Test Center with AI-powered recommendations" loading="lazy" src="App Images/book-soil-test/book-soil-test-1.png"/>
 </div>
 </div>
 </div>
@@ -485,7 +495,7 @@
 <div class="phone-mockup phone-mockup--sm">
 <div class="phone-mockup__notch"></div>
 <div class="phone-mockup__screen phone-mockup__screen--img">
-<img alt="Weather forecast with farming advice and alerts" loading="lazy" src="App Images/weather-overview-v2.png"/>
+<img alt="Weather forecast with farming advice and alerts" loading="lazy" src="App Images/weather-overview-v2 (1)/weather-overview-v2 (1)-1.png"/>
 </div>
 </div>
 </div>
@@ -507,7 +517,7 @@
 <div class="phone-mockup phone-mockup--sm">
 <div class="phone-mockup__notch"></div>
 <div class="phone-mockup__screen phone-mockup__screen--img">
-<img alt="KS AI Assistant providing crop disease diagnosis and treatment" loading="lazy" src="App Images/yield-revenue-projection.png"/>
+<img alt="KS AI Assistant providing crop disease diagnosis and treatment" loading="lazy" src="App Images/chatbot-screen/chatbot-screen-1.png"/>
 </div>
 </div>
 </div>
@@ -530,7 +540,7 @@
 <div class="phone-mockup phone-mockup--sm">
 <div class="phone-mockup__notch"></div>
 <div class="phone-mockup__screen phone-mockup__screen--img">
-<img alt="Profit Report showing cost breakdown and estimated returns" loading="lazy" src="App Images/profit-report.jpg"/>
+<img alt="Profit Report showing cost breakdown and estimated returns" loading="lazy" src="App Images/profit-report/profit-report-1.png"/>
 </div>
 </div>
 </div>
@@ -689,7 +699,7 @@
     <div class="phone-mockup phone-mockup--launch">
       <div class="phone-mockup__notch"></div>
       <div class="phone-mockup__screen phone-mockup__screen--img">
-        <img src="App Images/screen-11-dashboard.jpg" alt="KisanSangam Dashboard" loading="lazy">
+        <img src="App Images/screen-11-dashboard.png" alt="KisanSangam Dashboard" loading="lazy">
       </div>
     </div>
   </div>
@@ -741,7 +751,7 @@
 <div class="phone-mockup phone-mockup--preview">
 <div class="phone-mockup__notch"></div>
 <div class="phone-mockup__screen phone-mockup__screen--img">
-<img alt="KisanSangam Dashboard" loading="lazy" src="App Images/screen-11-dashboard.jpg"/>
+<img alt="KisanSangam Dashboard" loading="lazy" src="App Images/screen-11-dashboard.png"/>
 </div>
 </div>
 <span class="preview-slide__label" data-i18n="t_170">Dashboard</span>
@@ -751,7 +761,7 @@
 <div class="phone-mockup phone-mockup--preview">
 <div class="phone-mockup__notch"></div>
 <div class="phone-mockup__screen phone-mockup__screen--img">
-<img alt="AI Crop Recommendations" loading="lazy" src="App Images/screen-16-top-5-crops.png"/>
+<img alt="AI Crop Recommendations" loading="lazy" src="App Images/screen-16-top-5-crops (1)/screen-16-top-5-crops (1)-1.png"/>
 </div>
 </div>
 <span class="preview-slide__label" data-i18n="t_171">Crop Recommendation</span>
@@ -761,7 +771,7 @@
 <div class="phone-mockup phone-mockup--preview">
 <div class="phone-mockup__notch"></div>
 <div class="phone-mockup__screen phone-mockup__screen--img">
-<img alt="Weather Forecast &amp; Farming Advice" loading="lazy" src="App Images/weather-overview-v2.png"/>
+<img alt="Weather Forecast &amp; Farming Advice" loading="lazy" src="App Images/weather-overview-v2 (1)/weather-overview-v2 (1)-1.png"/>
 </div>
 </div>
 <span class="preview-slide__label" data-i18n="t_172">Weather Alerts</span>
@@ -771,7 +781,7 @@
 <div class="phone-mockup phone-mockup--preview">
 <div class="phone-mockup__notch"></div>
 <div class="phone-mockup__screen phone-mockup__screen--img">
-<img alt="Live Mandi Market Prices" loading="lazy" src="App Images/market-price-overview.jpg"/>
+<img alt="Live Mandi Market Prices" loading="lazy" src="App Images/market-price-overview/market-price-overview-1.png"/>
 </div>
 </div>
 <span class="preview-slide__label" data-i18n="t_173">Market Prices</span>
@@ -781,7 +791,7 @@
 <div class="phone-mockup phone-mockup--preview">
 <div class="phone-mockup__notch"></div>
 <div class="phone-mockup__screen phone-mockup__screen--img">
-<img alt="KS AI Crop Assistant" loading="lazy" src="App Images/ai chatbot.png"/>
+<img alt="KS AI Crop Assistant" loading="lazy" src="App Images/chatbot-screen/chatbot-screen-1.png"/>
 </div>
 </div>
 <span class="preview-slide__label" data-i18n="t_174">AI Crop Assistant</span>
@@ -791,7 +801,7 @@
 <div class="phone-mockup phone-mockup--preview">
 <div class="phone-mockup__notch"></div>
 <div class="phone-mockup__screen phone-mockup__screen--img">
-<img alt="Complete Crop Farming Guide" loading="lazy" src="App Images/farm-guide-screen.png"/>
+<img alt="Complete Crop Farming Guide" loading="lazy" src="App Images/farm-guide-screen/farm-guide-screen-1.png"/>
 </div>
 </div>
 <span class="preview-slide__label" data-i18n="t_175">Farm Guide</span>
@@ -801,7 +811,7 @@
 <div class="phone-mockup phone-mockup--preview">
 <div class="phone-mockup__notch"></div>
 <div class="phone-mockup__screen phone-mockup__screen--img">
-<img alt="Soil Test Center" loading="lazy" src="App Images/book-soil-test.jpg"/>
+<img alt="Soil Test Center" loading="lazy" src="App Images/book-soil-test/book-soil-test-1.png"/>
 </div>
 </div>
 <span class="preview-slide__label" data-i18n="t_176">Soil Test</span>
@@ -811,7 +821,7 @@
 <div class="phone-mockup phone-mockup--preview">
 <div class="phone-mockup__notch"></div>
 <div class="phone-mockup__screen phone-mockup__screen--img">
-<img alt="Profit Report &amp; Cost Breakdown" loading="lazy" src="App Images/profit-report.jpg"/>
+<img alt="Profit Report &amp; Cost Breakdown" loading="lazy" src="App Images/profit-report/profit-report-1.png"/>
 </div>
 </div>
 <span class="preview-slide__label" data-i18n="t_177">Profit Estimator</span>
@@ -821,7 +831,7 @@
 <div class="phone-mockup phone-mockup--preview">
 <div class="phone-mockup__notch"></div>
 <div class="phone-mockup__screen phone-mockup__screen--img">
-<img alt="Digital Land Leasing" loading="lazy" src="App Images/land-options.png"/>
+<img alt="Digital Land Leasing" loading="lazy" src="App Images/land-options/land-options-1.png"/>
 </div>
 </div>
 <span class="preview-slide__label" data-i18n="t_178">Land Lease</span>
@@ -831,7 +841,7 @@
 <div class="phone-mockup phone-mockup--preview">
 <div class="phone-mockup__notch"></div>
 <div class="phone-mockup__screen phone-mockup__screen--img">
-<img alt="Government Schemes &amp; Subsidies" loading="lazy" src="App Images/government-schemes-listing.png"/>
+<img alt="Government Schemes &amp; Subsidies" loading="lazy" src="App Images/government-schemes-listing/government-schemes-listing-1.png"/>
 </div>
 </div>
 <span class="preview-slide__label" data-i18n="t_179">Govt. Schemes</span>
@@ -841,7 +851,7 @@
 <div class="phone-mockup phone-mockup--preview">
 <div class="phone-mockup__notch"></div>
 <div class="phone-mockup__screen phone-mockup__screen--img">
-<img alt="Equipment Rental &amp; Sharing" loading="lazy" src="App Images/browse-rentals-mobile.png"/>
+<img alt="Equipment Rental &amp; Sharing" loading="lazy" src="App Images/browse-rentals-mobile/browse-rentals-mobile-1.png"/>
 </div>
 </div>
 <span class="preview-slide__label" data-i18n="t_180">Resource Sharing</span>
@@ -851,7 +861,7 @@
 <div class="phone-mockup phone-mockup--preview">
 <div class="phone-mockup__notch"></div>
 <div class="phone-mockup__screen phone-mockup__screen--img">
-<img alt="My Farms Management" loading="lazy" src="App Images/Screen-02-Register.png"/>
+<img alt="My Farms Management" loading="lazy" src="App Images/screen-my-farms/screen-my-farms-1.png"/>
 </div>
 </div>
 <span class="preview-slide__label" data-i18n="t_181">My Farms</span>
@@ -929,8 +939,8 @@
 <h4 data-i18n="t_199">Connect</h4>
 <ul>
 <li data-i18n="t_200"><a href="#launching-soon">Early Access</a></li>
-<li data-i18n="t_201"><a href="mailto:contact@kisansangam.in">Contact Us</a></li>
-<li data-i18n="t_202"><a href="#">Twitter</a></li>
+<li data-i18n="t_201"><a href="mailto:manavpatel.cloud@gmail.com">Contact Us</a></li>
+<li data-i18n="t_202"><a href="#">Instagram</a></li>
 <li data-i18n="t_203"><a href="#">LinkedIn</a></li>
 </ul>
 </div>
@@ -962,6 +972,6 @@
   </div>
 </div>
 <script src="translations.js"></script>
-<script src="script.js"></script>
+<script src="script.js?v=2"></script>
 </body>
 </html>
