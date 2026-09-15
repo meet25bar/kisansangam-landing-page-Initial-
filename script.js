@@ -118,21 +118,31 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---- Mobile Menu Toggle ---- */
   const navToggle = document.getElementById('navToggle');
   const navLinks = document.getElementById('navLinks');
+  const navOverlay = document.getElementById('navOverlay');
+
+  function closeMobileMenu() {
+    navToggle.classList.remove('active');
+    navLinks.classList.remove('active');
+    navOverlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
 
   navToggle.addEventListener('click', () => {
     navToggle.classList.toggle('active');
     navLinks.classList.toggle('active');
+    navOverlay.classList.toggle('active');
     document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
   });
 
   // Close mobile menu on link click
   navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-      navToggle.classList.remove('active');
-      navLinks.classList.remove('active');
-      document.body.style.overflow = '';
-    });
+    link.addEventListener('click', closeMobileMenu);
   });
+  
+  // Close mobile menu when clicking outside (on overlay)
+  if (navOverlay) {
+    navOverlay.addEventListener('click', closeMobileMenu);
+  }
 
 
   /* ---- Scroll Animations (IntersectionObserver) ---- */
