@@ -610,4 +610,41 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // --- Hash Navigation Handler ---
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('a[href^="#"]');
+    if (!link) return;
+    const hash = link.getAttribute('href');
+    if (hash === '#') return;
+
+    if (hash === '#launching-soon') {
+      setTimeout(() => {
+        const input = document.getElementById('firstName');
+        if (input) {
+          input.focus({ preventScroll: true });
+        }
+      }, 500); // Wait for smooth scroll
+    } else if (['#crop-guidance', '#soil-intelligence', '#market-prices', '#ai-crop-doctor'].includes(hash)) {
+      setTimeout(() => {
+        const el = document.querySelector(hash);
+        if (el) {
+          el.style.transition = 'background-color 0.5s ease, transform 0.5s ease';
+          const originalBg = el.style.backgroundColor;
+          const originalTransform = el.style.transform;
+          
+          el.style.backgroundColor = 'rgba(116, 198, 157, 0.15)'; // --green-300 with opacity
+          el.style.transform = 'scale(1.02)';
+          
+          setTimeout(() => {
+            el.style.backgroundColor = originalBg;
+            el.style.transform = originalTransform;
+            setTimeout(() => {
+              el.style.transition = '';
+            }, 500);
+          }, 800);
+        }
+      }, 500);
+    }
+  });
+
 });
