@@ -2438,7 +2438,7 @@ h1, h2, h3, h4 {
 }
 
 /* Positioned relative to .launch__visual (right grid column) */
-.floating-card--tl { top: 8%; left: -80px; }
+.floating-card--tl { top: 8%; left: -130px; }
 .floating-card--tr { top: 22%; right: -70px; animation-delay: 1s; }
 .floating-card--bl { bottom: 18%; left: -60px; animation-delay: 2s; }
 .floating-card--br { bottom: 32%; right: -90px; animation-delay: 3s; }
