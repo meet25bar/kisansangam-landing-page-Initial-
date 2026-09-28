@@ -90,6 +90,6 @@ Actionable Insights
 Better Farming Decisions
 
 
-tem**.
+
 
 
