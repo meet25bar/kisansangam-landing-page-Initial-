@@ -1,7 +1,7 @@
 # 🌾 KisanSangam — Smart Agriculture Platform
 
 <p align="center">
-  <img src="./public/logo.jpeg" alt="KisanSangam Logo" width="300">
+  <img src="App Images/logo.jpeg" alt="KisanSangam Logo" width="300">
 </p>
 
 <p align="center">
