@@ -1,91 +1,90 @@
 # 🌾 KisanSangam — Smart Agriculture Platform
 
 <p align="center">
-  <img src="https://img.shields.io/badge/KisanSangam-Smart%20Agriculture-2E7D32?style=for-the-badge" alt="KisanSangam">
-  <img src="https://img.shields.io/badge/AI-Powered-1565C0?style=for-the-badge" alt="AI Powered">
-  <img src="https://img.shields.io/badge/Status-Active-00C853?style=for-the-badge" alt="Status">
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" alt="License">
+  <img src="./public/logo.jpeg" alt="KisanSangam Logo" width="300">
 </p>
 
 <p align="center">
-  <strong>One Digital Platform for Smarter Farming</strong>
+  <strong>Smart Farming. Better Tomorrow.</strong>
 </p>
 
 <p align="center">
-  KisanSangam is an AI-powered smart agriculture ecosystem designed to help farmers make
-  better decisions through intelligent crop recommendations, farming guidance,
-  farm management, and market-driven insights.
+  <em>One Digital Platform for Smarter Farming</em>
 </p>
 
 <p align="center">
-  🌐 <a href="https://www.kisansangam.in">www.kisansangam.in</a>
+  <a href="https://www.kisansangam.in">
+    <img src="https://img.shields.io/badge/🌐_Live_Website-kisansangam.in-2E7D32?style=for-the-badge" alt="Live Website">
+  </a>
+  <img src="https://img.shields.io/badge/Status-Active_Development-00C853?style=for-the-badge" alt="Project Status">
+  <img src="https://img.shields.io/badge/Domain-Agricultural_Technology-4CAF50?style=for-the-badge" alt="Agricultural Technology">
 </p>
 
 ---
 
-## 🚜 About KisanSangam
+## 🌱 About KisanSangam
 
-**KisanSangam** is a technology-driven agricultural platform focused on bringing
-data, artificial intelligence, and digital tools together to support modern
-farming.
+**KisanSangam** is a technology-driven smart agriculture platform designed to
+bring modern digital technologies, artificial intelligence, agricultural data,
+and farmer-focused tools together in one ecosystem.
 
-The platform aims to transform traditional farming decisions into
-**data-driven, intelligent, and actionable insights**.
+The platform aims to help farmers make more informed decisions by transforming
+agricultural data into simple, practical, and actionable insights.
 
-KisanSangam brings multiple agricultural workflows together into a unified
-digital ecosystem:
+KisanSangam focuses on the complete farming decision cycle — from understanding
+soil and environmental conditions to selecting suitable crops, managing farm
+activities, understanding market conditions, and improving farm profitability.
 
-- 🌱 AI-Based Crop Recommendation
-- 📖 Crop-Specific Farming Guidance
-- 📊 Digital Farm Management
-- 📈 Agricultural Market Price Analysis
-- 🌦️ Weather Reporting
-- 🤖 AI-Assisted Farmer Support
-- 🧪 Soil Intelligence and Testing
-- 💰 Farm Cost & Profit Analysis
+The platform is being developed with a strong focus on:
+
+- 🤖 Artificial Intelligence
+- 🧠 Machine Learning
+- 📊 Data Analytics
+- 🌱 Agricultural Intelligence
+- 🌦️ Weather Information
+- 📈 Market Intelligence
+- 📱 Accessible Digital Tools
 
 ---
 
-## 🎯 Vision
+## 🌐 Official Website
+
+<p align="center">
+
+### 🚜 [www.kisansangam.in](https://www.kisansangam.in)
+
+</p>
+
+The website serves as the digital entry point to the KisanSangam ecosystem,
+providing an overview of the platform, its vision, core capabilities, and
+the technology-driven approach behind the project.
+
+---
+
+# 🎯 Vision
 
 > **To build an intelligent digital agricultural ecosystem that enables farmers
 > to make informed, profitable, and sustainable farming decisions.**
 
-KisanSangam focuses on reducing the gap between:
+Traditional farming decisions often depend on experience, fragmented
+information, and manually collected data.
 
-**Agricultural Data → Artificial Intelligence → Actionable Farming Decisions**
-
----
-
-## 🧠 Core Technology
-
-The KisanSangam ecosystem is designed around a combination of:
+KisanSangam aims to bridge this gap by connecting:
 
 ```text
-                    ┌──────────────────────┐
-                    │     Farmer Data      │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │ Data Processing &    │
-                    │ Feature Engineering  │
-                    └──────────┬───────────┘
-                               │
-             ┌─────────────────┼─────────────────┐
-             ▼                 ▼                 ▼
-      ┌────────────┐    ┌────────────┐    ┌────────────┐
-      │ ML Models  │    │ AI / LLM   │    │ External   │
-      │            │    │ Services   │    │ APIs/Data  │
-      └─────┬──────┘    └─────┬──────┘    └─────┬──────┘
-            │                 │                 │
-            └─────────────────┼─────────────────┘
-                              ▼
-                    ┌──────────────────────┐
-                    │ Intelligent Insights │
-                    └──────────┬───────────┘
-                               │
-                               ▼
-                    ┌──────────────────────┐
-                    │ Farmer-Focused UI    │
-                    └──────────────────────┘
+Agricultural Data
+       │
+       ▼
+Data Processing
+       │
+       ▼
+AI / Machine Learning
+       │
+       ▼
+Agricultural Intelligence
+       │
+       ▼
+Actionable Insights
+       │
+       ▼
+Better Farming Decisions
