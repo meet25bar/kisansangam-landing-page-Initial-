@@ -3252,6 +3252,52 @@ h1, h2, h3, h4 {
   .floating-card--br { display: none; }
 }
 
+/* About Details Custom Styles */
+.about-details {
+  margin-bottom: 60px;
+}
+.about-details__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+.about-details__card {
+  background: var(--white);
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--gray-100);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-details__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+.about-details__icon {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.about-details__card h3 {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--green-900);
+  margin-bottom: 12px;
+}
+.about-details__card p {
+  font-size: 15px;
+  color: var(--gray-600);
+  line-height: 1.6;
+}
+.about-timeline-title {
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--green-900);
+  margin-bottom: 40px;
+}
+
 .hero__bg picture { display: block; width: 100%; height: 100%; }
 
 @media (max-width: 768px) { .hero__overlay { background: linear-gradient(180deg, rgba(5, 38, 24, 0.85) 0%, rgba(5, 55, 34, 0.75) 45%, rgba(5, 55, 34, 0.15) 80%, rgba(5, 55, 34, 0.0) 100%); } }

@@ -214,7 +214,14 @@ const translations = {
     "nav_how": "How It Works",
     "nav_why": "Why Us",
     "nav_launch": "Launching Soon",
-    "nav_cta": "Get Early Access"
+    "nav_cta": "Get Early Access",
+    "about_mission_title": "Our Mission",
+    "about_mission_desc": "To empower Indian farmers with accessible, AI-driven digital tools that eliminate guesswork, reduce risks, and maximize profitability across every stage of farming.",
+    "about_vision_title": "Our Vision",
+    "about_vision_desc": "A future where every farmer, regardless of land size or location, has the knowledge and resources to cultivate sustainably, adapt to climate changes, and thrive economically.",
+    "about_why_title": "Why We Built This",
+    "about_why_desc": "Agriculture is the backbone of India, yet farmers face fragmented information and unpredictable challenges. We built KisanSangam to unify data, guidance, and community into one seamless ecosystem.",
+    "about_timeline_title": "The KisanSangam Lifecycle"
   },
 
   hi: {
@@ -430,7 +437,14 @@ const translations = {
     "nav_how": "कैसे काम करता है",
     "nav_why": "हमें क्यों चुनें",
     "nav_launch": "जल्द आ रहा है",
-    "nav_cta": "अर्ली एक्सेस प्राप्त करें"
+    "nav_cta": "अर्ली एक्सेस प्राप्त करें",
+    "about_mission_title": "हमारा मिशन",
+    "about_mission_desc": "भारतीय किसानों को सुलभ, एआई-संचालित डिजिटल उपकरणों के साथ सशक्त बनाना जो खेती के हर चरण में अनुमान को खत्म करते हैं, जोखिम कम करते हैं और लाभप्रदता को अधिकतम करते हैं।",
+    "about_vision_title": "हमारा नज़रिया",
+    "about_vision_desc": "एक ऐसा भविष्य जहां प्रत्येक किसान, भूमि के आकार या स्थान की परवाह किए बिना, स्थायी रूप से खेती करने, जलवायु परिवर्तनों के अनुकूल होने और आर्थिक रूप से पनपने के लिए ज्ञान और संसाधन रखता है।",
+    "about_why_title": "हमने इसे क्यों बनाया",
+    "about_why_desc": "कृषि भारत की रीढ़ है, फिर भी किसानों को खंडित जानकारी और अप्रत्याशित चुनौतियों का सामना करना पड़ता है। हमने डेटा, मार्गदर्शन और समुदाय को एक सहज पारिस्थितिकी तंत्र में एकीकृत करने के लिए किसानसंगम का निर्माण किया।",
+    "about_timeline_title": "किसानसंगम जीवनचक्र"
   },
 
   gu: {
@@ -646,6 +660,13 @@ const translations = {
     "nav_how": "કેવી રીતે કામ કરે છે",
     "nav_why": "અમને શા માટે",
     "nav_launch": "જલ્દી આવી રહ્યું છે",
-    "nav_cta": "અર્લી એક્સેસ મેળવો"
+    "nav_cta": "અર્લી એક્સેસ મેળવો",
+    "about_mission_title": "અમારું લક્ષ્ય",
+    "about_mission_desc": "ભારતીય ખેડૂતોને સુલભ, AI-સંચાલિત ડિજિટલ સાધનો સાથે સશક્તિકરણ કરવા જે અનુમાનને દૂર કરે છે, જોખમો ઘટાડે છે અને ખેતીના દરેક તબક્કામાં નફાકારકતા વધે છે.",
+    "about_vision_title": "અમારું વિઝન",
+    "about_vision_desc": "એક એવું ભવિષ્ય જ્યાં દરેક ખેડૂત, જમીનના કદ કે સ્થાનને ધ્યાનમાં લીધા વિના, ટકાઉ ખેતી કરવા, આબોહવા પરિવર્તનને અનુકૂલિત કરવા અને આર્થિક રીતે સમૃદ્ધ થવા માટે જ્ઞાન અને સંસાધનો ધરાવે છે.",
+    "about_why_title": "અમે આ શા માટે બનાવ્યું",
+    "about_why_desc": "કૃષિ એ ભારતની કરોડરજ્જુ છે, છતાં ખેડૂતોને ખંડિત માહિતી અને અણધારી પડકારોનો સામનો કરવો પડે છે. અમે ડેટા, માર્ગદર્શન અને સમુદાયને એક સીમલેસ ઇકોસિસ્ટમમાં એકીકૃત કરવા માટે કિસાનસંગમ બનાવ્યું છે.",
+    "about_timeline_title": "કિસાનસંગમ જીવનચક્ર"
   }
 };

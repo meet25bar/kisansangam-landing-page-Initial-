@@ -179,25 +179,67 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  /* ---- Smooth Scroll for Anchor Links ---- */
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', (e) => {
-      const targetId = anchor.getAttribute('href');
-      if (targetId === '#') return;
+  /* ---- Hash Router ---- */
+  const routes = {
+    '': ['home', 'problems'],
+    '#/': ['home', 'problems'],
+    '#/home': ['home', 'problems'],
+    '#/about': ['about'],
+    '#/features': ['features', 'highlights'],
+    '#/how-it-works': ['how-it-works'],
+    '#/why-kisansangam': ['why-kisansangam'],
+    '#/launching-soon': ['launching-soon', 'app-preview', 'cta']
+  };
 
-      const targetEl = document.querySelector(targetId);
-      if (targetEl) {
-        e.preventDefault();
-        const navHeight = navbar.offsetHeight;
-        const targetPosition = targetEl.getBoundingClientRect().top + window.scrollY - navHeight;
+  const allSections = [
+    'home', 'problems', 'about', 'features', 'highlights',
+    'how-it-works', 'why-kisansangam', 'launching-soon', 'app-preview', 'cta'
+  ];
 
-        window.scrollTo({
-          top: targetPosition,
-          behavior: 'smooth'
-        });
+  function handleRoute() {
+    let hash = window.location.hash || '#/home';
+    
+    // Normalize hash
+    if (!routes[hash]) {
+      hash = '#/home';
+    }
+
+    const activeSections = routes[hash];
+
+    // Hide all sections first
+    allSections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.style.display = 'none';
       }
     });
-  });
+
+    // Show active sections
+    activeSections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.style.display = 'block';
+      }
+    });
+
+    // Update active nav link
+    if (typeof navLinks !== 'undefined' && navLinks) {
+      navLinks.querySelectorAll('a:not(.btn)').forEach(link => {
+        link.classList.remove('active');
+        const href = link.getAttribute('href');
+        if (href === hash) {
+          link.classList.add('active');
+        }
+      });
+    }
+    
+    // Scroll to top
+    window.scrollTo(0, 0);
+  }
+
+  window.addEventListener('hashchange', handleRoute);
+  // Initialize route on load
+  handleRoute();
 
 
   /* ---- App Preview Carousel ---- */
@@ -383,27 +425,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 
-  /* ---- Active Nav Link Highlight ---- */
-  const sections = document.querySelectorAll('section[id]');
-
-  function highlightActiveNav() {
-    const scrollPos = window.scrollY + navbar.offsetHeight + 100;
-
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      const sectionBottom = sectionTop + section.offsetHeight;
-      const sectionId = section.getAttribute('id');
-
-      if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
-        navLinks.querySelectorAll('a:not(.btn)').forEach(link => {
-          link.classList.remove('active');
-          if (link.getAttribute('href') === `#${sectionId}`) {
-            link.classList.add('active');
-          }
-        });
-      }
-    });
-  }
+  /* ---- Active Nav Link Highlight Removed (Handled by Router) ---- */
 
   /* ---- Feature Modal Interactivity ---- */
   const featureData = {
