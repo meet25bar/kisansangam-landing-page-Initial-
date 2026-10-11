@@ -11,3 +11,6 @@ Thumbs.db
 
 # Misc
 *.log
+
+# Android APK binaries
+*.apk
