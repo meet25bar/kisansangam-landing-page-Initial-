@@ -1,1348 +1,1018 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>KisanSangam — Smart Farming. Better Tomorrow.</title>
-<meta name="description" content="KisanSangam brings personalized crop recommendations, practical farm guidance, weather updates and market information into one connected platform for better farming decisions. Available for Android."/>
-<meta name="keywords" content="KisanSangam, smart farming, crop recommendation, farm guidance, weather alerts, mandi prices, Gujarat, organic farming, Android app"/>
+<title data-i18n="t_1">KisanSangam — Smart Farming. Better Tomorrow.</title>
+<meta name="description" content="KisanSangam is an AI-powered digital agricultural ecosystem helping farmers with crop recommendations, farming guidance, soil intelligence, weather alerts, market prices, profit planning, farm management and more." />
+<meta content="KisanSangam, smart farming, agriculture, crop recommendation, soil testing, weather alerts, mandi prices, farm management, Gujarat, India" name="keywords"/>
 
 <!-- Canonical URL -->
-<link rel="canonical" href="https://www.kisansangam.in/"/>
+<link rel="canonical" href="https://kisansangam.in/" />
 
 <!-- Open Graph -->
-<meta property="og:type" content="website"/>
-<meta property="og:title" content="KisanSangam — Smart Farming. Better Tomorrow."/>
-<meta property="og:description" content="Personalized crop recommendations, farm guidance, weather updates and market information — in one platform for Gujarat farmers. Available for Android."/>
-<meta property="og:image" content="https://www.kisansangam.in/assets/social-preview.png"/>
-<meta property="og:image:width" content="1200"/>
-<meta property="og:image:height" content="630"/>
-<meta property="og:image:alt" content="KisanSangam — Smart Farming. Better Tomorrow."/>
-<meta property="og:url" content="https://www.kisansangam.in/"/>
-<meta property="og:site_name" content="KisanSangam"/>
+<meta property="og:type" content="website" />
+<meta property="og:title" content="KisanSangam — Smart Farming. Better Tomorrow." />
+<meta property="og:description" content="An AI-powered digital agricultural ecosystem supporting farmers across the complete farming lifecycle." />
+<meta property="og:image" content="https://kisansangam.in/assets/social-preview.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="KisanSangam — Smart Farming. Better Tomorrow." />
+<meta property="og:url" content="https://kisansangam.in/" />
+<meta property="og:site_name" content="KisanSangam" />
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:title" content="KisanSangam — Smart Farming. Better Tomorrow."/>
-<meta name="twitter:description" content="Agriculture intelligence for Gujarat farmers. Download the Android app today."/>
-<meta name="twitter:image" content="https://www.kisansangam.in/assets/social-preview.png"/>
+<!-- Social large-image preview -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="KisanSangam — Smart Farming. Better Tomorrow." />
+<meta name="twitter:description" content="AI-powered digital agriculture for smarter farming decisions." />
+<meta name="twitter:image" content="https://kisansangam.in/assets/social-preview.png" />
 
-<!-- Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "KisanSangam",
-  "url": "https://www.kisansangam.in",
-  "logo": "https://www.kisansangam.in/App Images/logo.jpeg",
-  "description": "Agriculture decision support platform for Gujarat farmers.",
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "email": "manavpatel.cloud@gmail.com",
-    "contactType": "customer support"
-  },
-  "sameAs": [
-    "https://www.instagram.com/kisansangam.in"
-  ]
-}
-</script>
-
-<!-- Fonts -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Noto+Sans+Gujarati:wght@400;500;600&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap" rel="stylesheet"/>
-
-<link href="styles.css?v=3" rel="stylesheet"/>
-
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css?v=2" rel="stylesheet"/>
 <!-- Favicon -->
 <link rel="icon" type="image/jpeg" href="App Images/logo.jpeg"/>
 
-<!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DP5XSD80WC"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+
   gtag('config', 'G-DP5XSD80WC');
 </script>
 </head>
 <body>
-
-<!-- Skip link for accessibility -->
-<a class="skip-link" href="#main-content">Skip to main content</a>
-
 <!-- ============ NAVBAR ============ -->
-<nav class="navbar" id="navbar" aria-label="Main navigation">
+<nav class="navbar" id="navbar">
 <div class="container navbar__inner">
-  <a class="navbar__logo" href="#/home" aria-label="KisanSangam Home">
-    <img alt="KisanSangam Logo" class="navbar__logo-img" src="App Images/logo.jpeg" width="36" height="36"/>
-    <span>KisanSangam</span>
-  </a>
-  <ul class="navbar__links" id="navLinks" role="list">
-    <li><a href="#/features" data-i18n="nav_platform">Platform</a></li>
-    <li><a href="#/how-it-works" data-i18n="nav_how">How It Works</a></li>
-    <li><a href="#/about" data-i18n="nav_about">About</a></li>
-    <li><a href="#/contact" data-i18n="nav_contact">Contact</a></li>
-    <li class="navbar__mobile-cta">
-      <a class="btn btn--primary btn--nav" href="#/download" data-i18n="nav_cta">Download Now</a>
-    </li>
-  </ul>
-  <div class="navbar__actions">
-    <div class="lang-dropdown" id="langDropdown">
-      <button aria-expanded="false" aria-haspopup="listbox" aria-label="Select language" class="lang-dropdown__trigger" id="langTrigger" type="button">
-        <svg class="lang-dropdown__globe" fill="none" height="16" viewBox="0 0 16 16" width="16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.3"/><ellipse cx="8" cy="8" rx="3.5" ry="6.5" stroke="currentColor" stroke-width="1.3"/><line stroke="currentColor" stroke-width="1.3" x1="1.5" x2="14.5" y1="8" y2="8"/></svg>
-        <span class="lang-dropdown__label" id="langLabel">EN</span>
-        <svg class="lang-dropdown__chevron" fill="none" height="10" viewBox="0 0 10 10" width="10" aria-hidden="true"><path d="M2.5 4L5 6.5L7.5 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"/></svg>
-      </button>
-      <ul class="lang-dropdown__menu" id="langMenu" role="listbox" aria-label="Language options">
-        <li class="lang-dropdown__option active" data-lang="en" role="option" tabindex="0">English</li>
-        <li class="lang-dropdown__option" data-lang="hi" role="option" tabindex="0">हिन्दी</li>
-        <li class="lang-dropdown__option" data-lang="gu" role="option" tabindex="0">ગુજરાતી</li>
-      </ul>
-    </div>
-    <a class="btn btn--primary btn--nav navbar__desktop-cta" data-i18n="nav_cta" href="#/download">Download Now</a>
-    <button aria-label="Toggle navigation menu" class="navbar__toggle" id="navToggle" aria-expanded="false">
-      <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
-    </button>
-  </div>
+<a class="navbar__logo" data-i18n="t_2" href="#">
+<img alt="KisanSangam Logo" class="navbar__logo-img" src="App Images/logo.jpeg"/>
+<span>KisanSangam</span>
+</a>
+<ul class="navbar__links" id="navLinks">
+<li><a href="#/home" data-i18n="nav_home">Home</a></li>
+<li><a href="#/about" data-i18n="nav_about">About</a></li>
+<li><a href="#/features" data-i18n="nav_features">Features</a></li>
+<li><a href="#/how-it-works" data-i18n="nav_how">How It Works</a></li>
+<li><a href="#/why-kisansangam" data-i18n="nav_why">Why Us</a></li>
+<li><a href="#/launching-soon" data-i18n="nav_launch">Launching Soon</a></li>
+<li class="navbar__mobile-cta"><a class="btn btn--primary btn--nav" href="#/launching-soon" data-i18n="nav_cta">Get Early Access</a></li>
+</ul>
+<div class="navbar__actions">
+<div class="lang-dropdown" id="langDropdown">
+<button aria-expanded="false" aria-haspopup="listbox" class="lang-dropdown__trigger" id="langTrigger" type="button">
+<svg class="lang-dropdown__globe" fill="none" height="16" viewbox="0 0 16 16" width="16"><circle cx="8" cy="8" r="6.5" stroke="currentColor" stroke-width="1.3"></circle><ellipse cx="8" cy="8" rx="3.5" ry="6.5" stroke="currentColor" stroke-width="1.3"></ellipse><line stroke="currentColor" stroke-width="1.3" x1="1.5" x2="14.5" y1="8" y2="8"></line></svg>
+<span class="lang-dropdown__label" id="langLabel">EN</span>
+<svg class="lang-dropdown__chevron" fill="none" height="10" viewbox="0 0 10 10" width="10"><path d="M2.5 4L5 6.5L7.5 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"></path></svg>
+</button>
+<ul class="lang-dropdown__menu" id="langMenu" role="listbox">
+<li class="lang-dropdown__option active" data-lang="en" role="option">English</li>
+<li class="lang-dropdown__option" data-lang="hi" role="option">हिन्दी</li>
+<li class="lang-dropdown__option" data-lang="gu" role="option">ગુજરાતી</li>
+</ul>
+</div>
+<a class="btn btn--primary btn--nav navbar__desktop-cta" data-i18n="nav_cta" href="#/launching-soon">Get Early Access</a>
+<button aria-label="Toggle navigation" class="navbar__toggle" id="navToggle">
+<span></span><span></span><span></span>
+</button>
+</div>
 </div>
 </nav>
-<div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+<div class="nav-overlay" id="navOverlay"></div>
+<!-- ============ HERO SECTION ============ -->
+<section class="hero" id="home">
+<div class="hero__bg">
+<picture><source media="(max-width: 768px)" srcset="assets/image(mobile).png"><img alt="" loading="eager" src="assets/image.png"/></picture>
+<div class="hero__overlay"></div>
+</div>
+<div class="container hero__inner">
+<div class="hero__content anim-fade-up">
+<span class="hero__badge" data-i18n="t_13">AI-Powered Agricultural Ecosystem</span>
+<h1 class="hero__title" data-i18n="t_14">One Digital Platform<br/>for Smarter Farming<br/>Decisions</h1>
+<p class="hero__subtitle" data-i18n="t_15">From soil analysis to selling — KisanSangam combines crop recommendation, farming guidance, weather alerts, market prices, profit planning, and complete farm management in one intelligent platform built for Indian farmers.</p>
+<div class="hero__ctas">
+<a class="btn btn--primary btn--lg" data-i18n="t_16" href="#/features">Explore Features</a>
+<a class="btn btn--outline-light btn--lg" data-i18n="t_17" href="#/launching-soon">Launching Soon</a>
+</div>
 
-<!-- ============ MAIN CONTENT ============ -->
-<main id="main-content">
+</div>
+<div class="hero__visual anim-fade-up" style="animation-delay: 0.2s">
+<div class="phone-mockup phone-mockup--hero">
+<div class="phone-mockup__notch"></div>
+<div class="phone-mockup__screen phone-mockup__screen--img">
+<img alt="KisanSangam Dashboard showing crop recommendations, weather alerts, and market prices" loading="eager" src="App Images/screen-11-dashboard.png"/>
+</div>
+</div>
+<div class="hero__floating-badges">
+<span class="floating-badge floating-badge--1 anim-float" data-i18n="t_19">🌾 Crop Guidance</span>
+<span class="floating-badge floating-badge--2 anim-float" data-i18n="t_20" style="animation-delay:1s">📊 Market Prices</span>
+<span class="floating-badge floating-badge--3 anim-float" data-i18n="t_21" style="animation-delay:2s">🔬 Soil Insights</span>
+</div>
+</div>
+</div>
+<div class="hero__wave">
+<svg fill="none" preserveaspectratio="none" viewbox="0 0 1440 100"><path d="M0 40C360 80 720 0 1080 40C1260 60 1380 50 1440 40V100H0V40Z" fill="#FAFAF7"></path></svg>
+</div>
+</section>
+<!-- ============ PROBLEMS SECTION ============ -->
+<section class="section section--problems" id="problems">
+<div class="container">
+<div class="section__header anim-fade-up">
+<span class="section__tag" data-i18n="t_22">The Challenge</span>
+<h2 class="section__title" data-i18n="t_23">Farming Decisions Are Still Too Fragmented</h2>
+<p class="section__desc" data-i18n="t_24">Farmers today rely on scattered, disconnected sources for critical decisions. Information about soil, crops, weather, markets, and government schemes exists in silos — making it harder to plan, grow, and profit confidently.</p>
+</div>
+<div class="problems-grid">
+<div class="problem-card anim-fade-up">
+<div class="problem-card__icon">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
+  </div>
+<h3 data-i18n="t_25">Fragmented Information</h3>
+<p data-i18n="t_26">Farming advice, market data, weather, and government schemes are spread across dozens of disconnected sources.</p>
+</div>
+<div class="problem-card anim-fade-up" style="animation-delay: 0.05s">
+<div class="problem-card__icon">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+  </div>
+<h3 data-i18n="t_27">Complex Soil Data</h3>
+<p data-i18n="t_28">Soil health reports are technical and hard to interpret, leaving farmers unsure about what to do with the results.</p>
+</div>
+<div class="problem-card anim-fade-up" style="animation-delay: 0.1s">
+<div class="problem-card__icon">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2"/><path d="M12 20v2"/><path d="M2 12h2"/><path d="M20 12h2"/><circle cx="12" cy="12" r="8"/><path d="M12 15.5c-2.5 0-4-1.5-4-3.5 0-2 4-5.5 4-5.5s4 3.5 4 5.5c0 2-1.5 3.5-4 3.5z"/><path d="M12 15.5V17"/></svg>
+  </div>
+<h3 data-i18n="t_29">Crop Selection Uncertainty</h3>
+<p data-i18n="t_30">Choosing the right crop requires understanding soil, season, water, and market conditions — too much guesswork.</p>
+</div>
+<div class="problem-card anim-fade-up" style="animation-delay: 0.15s">
+<div class="problem-card__icon">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+  </div>
+<h3 data-i18n="t_31">No Complete Guidance</h3>
+<p data-i18n="t_32">Step-by-step farming guidance from sowing to harvesting is rarely available in one accessible place.</p>
+</div>
+<div class="problem-card anim-fade-up" style="animation-delay: 0.2s">
+<div class="problem-card__icon">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><polyline points="7 16 12 11 16 14 21 8"/><polyline points="16 8 21 8 21 13"/></svg>
+  </div>
+<h3 data-i18n="t_33">Unclear Mandi Prices</h3>
+<p data-i18n="t_34">Real-time market prices are hard to access, making it difficult to sell at the right time and right place.</p>
+</div>
+<div class="problem-card anim-fade-up" style="animation-delay: 0.25s">
+<div class="problem-card__icon">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M6 16.326A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 .5 8.973"/><path d="m13 12-3 5h4l-3 5"/></svg>
+  </div>
+<h3 data-i18n="t_35">Weather Risk</h3>
+<p data-i18n="t_36">Unexpected weather events can devastate crops, and timely, location-specific alerts are often missing.</p>
+</div>
+<div class="problem-card anim-fade-up" style="animation-delay: 0.3s">
+<div class="problem-card__icon">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+  </div>
+<h3 data-i18n="t_37">Weak Record-Keeping</h3>
+<p data-i18n="t_38">Most farmers have no easy digital way to track expenses, yields, activities, or farm history for future decisions.</p>
+</div>
+<div class="problem-card anim-fade-up" style="animation-delay: 0.35s">
+<div class="problem-card__icon">
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+  </div>
+<h3 data-i18n="t_39">Limited Resource Access</h3>
+<p data-i18n="t_40">Finding available machinery, leasing land, or discovering relevant government schemes remains a manual struggle.</p>
+</div>
+</div>
+<div class="problems-solution anim-fade-up">
+<div class="problems-solution__inner">
+<p data-i18n="t_41"><strong>KisanSangam brings it all together</strong> — one platform that connects every part of the farming journey with intelligence, guidance, and practical tools.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ ABOUT / ECOSYSTEM OVERVIEW ============ -->
+<section class="section section--ecosystem" id="about">
+<div class="container">
+<div class="section__header anim-fade-up">
+<span class="section__tag" data-i18n="t_42">The Ecosystem</span>
+<h2 class="section__title" data-i18n="t_43">A Connected Platform for the<br/>Complete Farming Lifecycle</h2>
+<p class="section__desc" data-i18n="t_44">KisanSangam is not a single-purpose app. It is a full farming lifecycle platform that supports every stage — from understanding your farm to accessing government support.</p>
+</div>
+<div class="about-details anim-fade-up">
+<div class="about-details__grid">
+<div class="about-details__card">
+  <div class="about-details__icon">🎯</div>
+  <h3 data-i18n="about_mission_title">Our Mission</h3>
+  <p data-i18n="about_mission_desc">To empower Indian farmers with accessible, AI-driven digital tools that eliminate guesswork, reduce risks, and maximize profitability across every stage of farming.</p>
+</div>
+<div class="about-details__card">
+  <div class="about-details__icon">👁️</div>
+  <h3 data-i18n="about_vision_title">Our Vision</h3>
+  <p data-i18n="about_vision_desc">A future where every farmer, regardless of land size or location, has the knowledge and resources to cultivate sustainably, adapt to climate changes, and thrive economically.</p>
+</div>
+<div class="about-details__card">
+  <div class="about-details__icon">🤝</div>
+  <h3 data-i18n="about_why_title">Why We Built This</h3>
+  <p data-i18n="about_why_desc">Agriculture is the backbone of India, yet farmers face fragmented information and unpredictable challenges. We built KisanSangam to unify data, guidance, and community into one seamless ecosystem.</p>
+</div>
+</div>
+</div>
+<h3 class="about-timeline-title anim-fade-up" data-i18n="about_timeline_title">The KisanSangam Lifecycle</h3>
+<div class="ecosystem-timeline">
+<div class="eco-timeline-line"></div>
 
-<!-- ============ HOME PAGE ============ -->
-<div id="page-home" class="page">
+<div class="eco-timeline-step anim-fade-up">
+<div class="eco-timeline-badge">1</div>
+<div class="eco-timeline-card">
+<div class="eco-timeline-icon">🏡</div>
+<div class="eco-timeline-info">
+<h3 data-i18n="t_45">Farm Understanding</h3>
+<p data-i18n="t_45_desc">Build your digital farm profile with location, soil type, and water resources to get personalized guidance.</p>
+</div>
+</div>
+</div>
 
-  <!-- HERO -->
-  <section class="hero" id="home" aria-labelledby="hero-heading">
-    <div class="hero__bg">
-      <picture>
-        <source media="(max-width: 768px)" srcset="assets/image(mobile).png">
-        <img alt="" loading="eager" src="assets/image.png" width="1920" height="1080"/>
-      </picture>
-      <div class="hero__overlay"></div>
+<div class="eco-timeline-step anim-fade-up">
+<div class="eco-timeline-badge">2</div>
+<div class="eco-timeline-card">
+<div class="eco-timeline-icon">🔬</div>
+<div class="eco-timeline-info">
+<h3 data-i18n="t_46">Soil Analysis</h3>
+<p data-i18n="t_46_desc">Book soil tests or enter lab results to understand nutrient levels and get improvement recommendations.</p>
+</div>
+</div>
+</div>
+
+<div class="eco-timeline-step anim-fade-up">
+<div class="eco-timeline-badge">3</div>
+<div class="eco-timeline-card">
+<div class="eco-timeline-icon">🌱</div>
+<div class="eco-timeline-info">
+<h3 data-i18n="t_47">Crop Selection</h3>
+<p data-i18n="t_47_desc">Get AI-powered recommendations for the most suitable and profitable crops for your specific farm conditions.</p>
+</div>
+</div>
+</div>
+
+<div class="eco-timeline-step anim-fade-up">
+<div class="eco-timeline-badge">4</div>
+<div class="eco-timeline-card">
+<div class="eco-timeline-icon">📋</div>
+<div class="eco-timeline-info">
+<h3 data-i18n="t_48">Cultivation Guidance</h3>
+<p data-i18n="t_48_desc">Follow step-by-step instructions from sowing to harvesting, tailored to your selected crop.</p>
+</div>
+</div>
+</div>
+
+<div class="eco-timeline-step anim-fade-up">
+<div class="eco-timeline-badge">5</div>
+<div class="eco-timeline-card">
+<div class="eco-timeline-icon">🌦️</div>
+<div class="eco-timeline-info">
+<h3 data-i18n="t_49">Weather Monitoring</h3>
+<p data-i18n="t_49_desc">Receive location-specific forecasts and timely alerts to protect your crops from sudden weather changes.</p>
+</div>
+</div>
+</div>
+
+<div class="eco-timeline-step anim-fade-up">
+<div class="eco-timeline-badge">6</div>
+<div class="eco-timeline-card">
+<div class="eco-timeline-icon">📊</div>
+<div class="eco-timeline-info">
+<h3 data-i18n="t_50">Market Intelligence</h3>
+<p data-i18n="t_50_desc">Track live mandi prices across regions to decide the best time and place to sell your produce.</p>
+</div>
+</div>
+</div>
+
+<div class="eco-timeline-step anim-fade-up">
+<div class="eco-timeline-badge">7</div>
+<div class="eco-timeline-card">
+<div class="eco-timeline-icon">📱</div>
+<div class="eco-timeline-info">
+<h3 data-i18n="t_51">Farm Management</h3>
+<p data-i18n="t_51_desc">Keep digital records of activities, track expenses, and monitor the overall health of your farm operations.</p>
+</div>
+</div>
+</div>
+
+<div class="eco-timeline-step anim-fade-up">
+<div class="eco-timeline-badge">8</div>
+<div class="eco-timeline-card">
+<div class="eco-timeline-icon">🩺</div>
+<div class="eco-timeline-info">
+<h3 data-i18n="t_52">Crop Diagnosis</h3>
+<p data-i18n="t_52_desc">Use the AI Crop Doctor to identify diseases or pests from photos and get instant treatment advice.</p>
+</div>
+</div>
+</div>
+
+<div class="eco-timeline-step anim-fade-up">
+<div class="eco-timeline-badge">9</div>
+<div class="eco-timeline-card">
+<div class="eco-timeline-icon">🚜</div>
+<div class="eco-timeline-info">
+<h3 data-i18n="t_53">Resource Access</h3>
+<p data-i18n="t_53_desc">Find and rent agricultural equipment from nearby farmers easily through our digital marketplace.</p>
+</div>
+</div>
+</div>
+
+<div class="eco-timeline-step anim-fade-up">
+<div class="eco-timeline-badge">10</div>
+<div class="eco-timeline-card">
+<div class="eco-timeline-icon">💰</div>
+<div class="eco-timeline-info">
+<h3 data-i18n="t_54">Profit Planning</h3>
+<p data-i18n="t_54_desc">Estimate costs and potential revenue before planting to make financially sound farming decisions.</p>
+</div>
+</div>
+</div>
+
+<div class="eco-timeline-step anim-fade-up">
+<div class="eco-timeline-badge">11</div>
+<div class="eco-timeline-card">
+<div class="eco-timeline-icon">🏠</div>
+<div class="eco-timeline-info">
+<h3 data-i18n="t_55">Land Leasing</h3>
+<p data-i18n="t_55_desc">Discover available agricultural land for lease or list your own land securely and quickly.</p>
+</div>
+</div>
+</div>
+
+<div class="eco-timeline-step anim-fade-up">
+<div class="eco-timeline-badge">12</div>
+<div class="eco-timeline-card">
+<div class="eco-timeline-icon">🏛️</div>
+<div class="eco-timeline-info">
+<h3 data-i18n="t_56">Government Support</h3>
+<p data-i18n="t_56_desc">Find eligible agricultural schemes, subsidies, and apply for them with guided assistance.</p>
+</div>
+</div>
+</div>
+</div>
+<p class="ecosystem-note anim-fade-up" data-i18n="t_57">Every stage is connected. Every decision is supported. That's the KisanSangam ecosystem.</p>
+</div>
+</section>
+<!-- ============ FEATURES SECTION ============ -->
+<section class="section section--features" id="features">
+<div class="container">
+<div class="section__header anim-fade-up">
+<span class="section__tag" data-i18n="t_58">Platform Features</span>
+<h2 class="section__title" data-i18n="t_59">Everything a Farmer Needs,<br/>In One Place</h2>
+<p class="section__desc" data-i18n="t_60">11 integrated modules working together to simplify farming decisions and improve outcomes.</p>
+</div>
+<div class="features-grid">
+<div class="feature-card feature-card--interactive anim-fade-up" data-feature-id="f1">
+<div class="feature-card__icon feature-card__icon--green">
+<svg fill="none" height="28" viewbox="0 0 28 28" width="28"><path d="M14 3C14 3 8 9 8 15C8 18.3 10.7 21 14 21C17.3 21 20 18.3 20 15C20 9 14 3 14 3Z" stroke="currentColor" stroke-width="1.8"></path><path d="M14 10V21" stroke="currentColor" stroke-width="1.5"></path><path d="M11 14C12.5 12.5 14 12 14 12" stroke="currentColor" stroke-linecap="round" stroke-width="1.2"></path><path d="M17 16.5C15.5 15.5 14 15 14 15" stroke="currentColor" stroke-linecap="round" stroke-width="1.2"></path><path d="M6 24H22" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>
+</div>
+<h3 class="feature-card__title" data-i18n="t_61">AI Crop Recommendation</h3>
+<p class="feature-card__desc" data-i18n="t_62">Get personalized crop suggestions based on your soil type, location, season, water availability, and market demand.</p>
+<span class="feature-card__more">Learn More &rarr;</span>
+</div>
+<div class="feature-card feature-card--interactive anim-fade-up" style="animation-delay: 0.05s" data-feature-id="f2">
+<div class="feature-card__icon feature-card__icon--teal">
+<svg fill="none" height="28" viewbox="0 0 28 28" width="28"><rect height="22" rx="2" stroke="currentColor" stroke-width="1.8" width="18" x="5" y="3"></rect><path d="M9 8H19M9 12H19M9 16H15" stroke="currentColor" stroke-linecap="round" stroke-width="1.3"></path><path d="M17 16L19 18L23 14" stroke="#2D6A4F" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+</div>
+<h3 class="feature-card__title" data-i18n="t_63">Crop-Specific Guidance</h3>
+<p class="feature-card__desc" data-i18n="t_64">Complete step-by-step cultivation guidance from land preparation through sowing, care, and harvesting.</p>
+<span class="feature-card__more">Learn More &rarr;</span>
+</div>
+<div class="feature-card feature-card--interactive anim-fade-up" style="animation-delay: 0.1s" data-feature-id="f3">
+<div class="feature-card__icon feature-card__icon--brown">
+<svg fill="none" height="28" viewbox="0 0 28 28" width="28"><path d="M6 14C6 14 8 13 14 13C20 13 22 14 22 14V22C22 24.2 20.2 26 18 26H10C7.8 26 6 24.2 6 22V14Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path><path d="M6 18.5H22" stroke="currentColor" stroke-dasharray="3 3" stroke-linecap="round" stroke-width="1.8"></path><path d="M6 22.5H22" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><circle cx="10" cy="16" fill="currentColor" r="1.2"></circle><circle cx="18" cy="16" fill="currentColor" r="1.2"></circle><circle cx="14" cy="20.5" fill="currentColor" r="1.2"></circle><path d="M14 13V5" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><path d="M14 9C11.5 9 10 7 10 5C11.5 5 14 7 14 9Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path><path d="M14 7C16.5 7 18 5 18 3C16.5 3 14 5 14 7Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+</div>
+<h3 class="feature-card__title" data-i18n="t_65">Soil Intelligence</h3>
+<p class="feature-card__desc" data-i18n="t_66">Understand your soil health, nutrient levels, and get actionable recommendations for soil improvement.</p>
+<span class="feature-card__more">Learn More &rarr;</span>
+</div>
+<div class="feature-card feature-card--interactive anim-fade-up" style="animation-delay: 0.15s" data-feature-id="f4">
+<div class="feature-card__icon feature-card__icon--orange">
+<svg fill="none" height="28" viewbox="0 0 28 28" width="28"><path d="M4 22L9 14L14 17L19 8L24 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M20 4H24V8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M4 24H24" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"></path></svg>
+</div>
+<h3 class="feature-card__title" data-i18n="t_67">Market Price Analysis</h3>
+<p class="feature-card__desc" data-i18n="t_68">Track live mandi rates, compare prices across markets, and find the best time and place to sell your produce.</p>
+<span class="feature-card__more">Learn More &rarr;</span>
+</div>
+<div class="feature-card feature-card--interactive anim-fade-up" style="animation-delay: 0.2s" data-feature-id="f5">
+<div class="feature-card__icon feature-card__icon--gold">
+<svg fill="none" height="28" viewbox="0 0 28 28" width="28"><rect height="14" rx="2" stroke="currentColor" stroke-width="1.8" width="22" x="3" y="10"></rect><path d="M7 10V7C7 5.3 8.3 4 10 4H18C19.7 4 21 5.3 21 7V10" stroke="currentColor" stroke-width="1.8"></path><path d="M8 16H20M8 20H14" stroke="currentColor" stroke-linecap="round" stroke-width="1.3"></path></svg>
+</div>
+<h3 class="feature-card__title" data-i18n="t_69">Digital Land Leasing</h3>
+<p class="feature-card__desc" data-i18n="t_70">Find land to lease or list your land for others — a simple digital marketplace for agricultural land.</p>
+<span class="feature-card__more">Learn More &rarr;</span>
+</div>
+<div class="feature-card feature-card--interactive anim-fade-up" style="animation-delay: 0.25s" data-feature-id="f6">
+<div class="feature-card__icon feature-card__icon--blue">
+<svg fill="none" height="28" viewbox="0 0 28 28" width="28"><path d="M9.5 22C6.5 22 4 19.5 4 16.5C4 13.7 6.1 11.4 8.8 11.1C9.8 8.7 12.2 7 15 7C18.9 7 22 10.1 22 14C22 14.1 22 14.2 22 14.3C23.7 14.9 25 16.5 25 18.5C25 20.4 23.4 22 21.5 22H9.5Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path><path d="M15 11V16" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path><circle cx="15" cy="19.5" fill="currentColor" r="1.5"></circle></svg>
+</div>
+<h3 class="feature-card__title" data-i18n="t_71">Weather-Based Alerts</h3>
+<p class="feature-card__desc" data-i18n="t_72">Receive timely weather forecasts and farming-specific alerts so you can plan and protect your crops better.</p>
+<span class="feature-card__more">Learn More &rarr;</span>
+</div>
+<div class="feature-card feature-card--interactive anim-fade-up" style="animation-delay: 0.3s" data-feature-id="f7">
+<div class="feature-card__icon feature-card__icon--green">
+<svg fill="none" height="28" viewbox="0 0 28 28" width="28"><rect height="22" rx="3" stroke="currentColor" stroke-width="1.8" width="18" x="5" y="3"></rect><rect height="6" rx="1" stroke="currentColor" stroke-width="1.8" width="12" x="8" y="7"></rect><path d="M10 11L12.5 8.5L14 10L16.5 7.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path><path d="M9 17H11" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><path d="M13 17H15" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><path d="M17 17H19" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><path d="M9 21H11" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><path d="M13 21H19" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>
+</div>
+<h3 class="feature-card__title" data-i18n="t_73">Profit &amp; Cost Calculator</h3>
+<p class="feature-card__desc" data-i18n="t_74">Plan your farming expenses and estimate potential revenue to make informed, profitable crop decisions.</p>
+<span class="feature-card__more">Learn More &rarr;</span>
+</div>
+<div class="feature-card feature-card--interactive anim-fade-up" style="animation-delay: 0.35s" data-feature-id="f8">
+<div class="feature-card__icon feature-card__icon--teal">
+<svg fill="none" height="28" viewbox="0 0 28 28" width="28"><path d="M11 5H9C7.89543 5 7 5.89543 7 7V23C7 24.1046 7.89543 25 9 25H19C20.1046 25 21 24.1046 21 23V7C21 5.89543 20.1046 5 19 5H17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><rect height="4" rx="1" stroke="currentColor" stroke-width="1.8" width="6" x="11" y="3"></rect><path d="M10 13L12.5 15.5L18 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M10 19H18" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><path d="M10 22H14" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>
+</div>
+<h3 class="feature-card__title" data-i18n="t_75">Digital Farm Management</h3>
+<p class="feature-card__desc" data-i18n="t_76">Keep digital records of your farm activities, expenses, yields, and crop history — all in one secure place.</p>
+<span class="feature-card__more">Learn More &rarr;</span>
+</div>
+<div class="feature-card feature-card--interactive anim-fade-up" style="animation-delay: 0.4s" data-feature-id="f9">
+<div class="feature-card__icon feature-card__icon--red">
+<svg fill="none" height="28" viewbox="0 0 28 28" width="28"><path d="M14 25V23" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><path d="M14 23C7 23 4 16 4 9C11 9 14 16 14 23Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path><path d="M14 23C21 23 24 16 24 9C17 9 14 16 14 23Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path><path d="M14 12V18M11 15H17" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path></svg>
+</div>
+<h3 class="feature-card__title" data-i18n="t_77">AI Crop Doctor</h3>
+<p class="feature-card__desc" data-i18n="t_78">Identify crop diseases and pest problems using AI, and get diagnosis with treatment recommendations.</p>
+<span class="feature-card__more">Learn More &rarr;</span>
+</div>
+<div class="feature-card feature-card--interactive anim-fade-up" style="animation-delay: 0.45s" data-feature-id="f10">
+<div class="feature-card__icon feature-card__icon--orange">
+<svg fill="none" height="28" viewbox="0 0 28 28" width="28"><circle cx="8" cy="19" r="4" stroke="currentColor" stroke-width="1.8"></circle><circle cx="8" cy="19" r="1" stroke="currentColor" stroke-width="1.8"></circle><circle cx="20" cy="20" r="3" stroke="currentColor" stroke-width="1.8"></circle><circle cx="20" cy="20" r="1" stroke="currentColor" stroke-width="1.8"></circle><path d="M 3 19 A 6 6 0 0 1 13.5 16" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><path d="M 13.5 16 H 20 V 17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M 13 16 V 11 H 21 V 17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M 4 14 V 6 H 13 V 11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M 13 9 L 10.5 9" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><path d="M 19 11 V 5" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>
+</div>
+<h3 class="feature-card__title" data-i18n="t_79">Resource &amp; Equipment Sharing</h3>
+<p class="feature-card__desc" data-i18n="t_80">Connect with nearby farmers to share or rent agricultural equipment and resources when you need them.</p>
+<span class="feature-card__more">Learn More &rarr;</span>
+</div>
+<div class="feature-card feature-card--interactive anim-fade-up" style="animation-delay: 0.5s" data-feature-id="f11">
+<div class="feature-card__icon feature-card__icon--gold">
+<svg fill="none" height="28" viewbox="0 0 28 28" width="28"><path d="M16 4H8C6.89543 4 6 4.89543 6 6V22C6 23.1046 6.89543 24 8 24H20C21.1046 24 22 23.1046 22 22V10L16 4Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><path d="M16 4V10H22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path><circle cx="12" cy="16" r="3" stroke="currentColor" stroke-width="1.8"></circle><path d="M14.5 18.5L17 21" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><path d="M10 10H12" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>
+</div>
+<h3 class="feature-card__title" data-i18n="t_81">Government Scheme Finder</h3>
+<p class="feature-card__desc" data-i18n="t_82">Discover relevant agricultural government schemes and subsidies matched to your farming profile.</p>
+<span class="feature-card__more">Learn More &rarr;</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ DETAILED HIGHLIGHTS ============ -->
+<section class="section section--highlights" id="highlights">
+<div class="container">
+<!-- Highlight 1: AI Crop Recommendation -->
+<div class="highlight anim-fade-up">
+<div class="highlight__content">
+<span class="highlight__tag" data-i18n="t_83">Intelligent Crop Selection</span>
+<h2 class="highlight__title" data-i18n="t_84">AI-Powered Crop Recommendations, Tailored to Your Farm</h2>
+<p class="highlight__desc" data-i18n="t_85">Stop guessing which crop to grow. KisanSangam analyzes your soil data, local climate, water availability, and current market trends to suggest the most suitable and profitable crops for your specific farm.</p>
+<ul class="highlight__list">
+<li data-i18n="t_86">Personalized suggestions based on soil health and nutrients</li>
+<li data-i18n="t_87">Considers local climate, season, and water sources</li>
+<li data-i18n="t_88">Factors in current and predicted market demand</li>
+<li data-i18n="t_89">Compares profitability across suitable crop options</li>
+</ul>
+</div>
+<div class="highlight__visual">
+<div class="phone-mockup phone-mockup--sm">
+<div class="phone-mockup__notch"></div>
+<div class="phone-mockup__screen phone-mockup__screen--img">
+<img alt="AI Crop Recommendation screen showing top crop matches" loading="lazy" src="App Images/screen-16-top-5-crops (1)/screen-16-top-5-crops (1)-1.png"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Highlight 2: Farming Guidance -->
+<div class="highlight highlight--reverse anim-fade-up" id="crop-guidance">
+<div class="highlight__content">
+<span class="highlight__tag" data-i18n="t_90">Complete Cultivation Support</span>
+<h2 class="highlight__title" data-i18n="t_91">Step-by-Step Farming Guidance for Every Crop</h2>
+<p class="highlight__desc" data-i18n="t_92">Once you select a crop, KisanSangam provides detailed, stage-wise farming guidance — covering everything from land preparation and seed selection to fertilizer schedules and harvesting best practices.</p>
+<ul class="highlight__list">
+<li data-i18n="t_93">Detailed guidance for each growth stage</li>
+<li data-i18n="t_94">Fertilizer and irrigation scheduling</li>
+<li data-i18n="t_95">Pest and disease prevention tips</li>
+<li data-i18n="t_96">Harvesting and post-harvest handling</li>
+<li data-i18n="t_97">Locally relevant agricultural practices</li>
+</ul>
+</div>
+<div class="highlight__visual">
+<div class="phone-mockup phone-mockup--sm">
+<div class="phone-mockup__notch"></div>
+<div class="phone-mockup__screen phone-mockup__screen--img">
+<img alt="Complete crop farming guide with step-by-step stages" loading="lazy" src="App Images/farm-guide-screen/farm-guide-screen-1.png"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Highlight 3: Soil Intelligence -->
+<div class="highlight anim-fade-up" id="soil-intelligence">
+<div class="highlight__content">
+<span class="highlight__tag" data-i18n="t_98">Soil Understanding Made Simple</span>
+<h2 class="highlight__title" data-i18n="t_99">Know Your Soil, Grow With Confidence</h2>
+<p class="highlight__desc" data-i18n="t_100">Soil health is the foundation of good farming. KisanSangam helps you understand your soil's nutrient levels, pH, texture, and provides clear recommendations — not just raw lab numbers.</p>
+<ul class="highlight__list">
+<li data-i18n="t_101">Easy-to-understand soil health summary</li>
+<li data-i18n="t_102">NPK, pH, organic carbon, and micronutrient insights</li>
+<li data-i18n="t_103">Soil improvement recommendations</li>
+<li data-i18n="t_104">Connects soil data to better crop selection</li>
+</ul>
+</div>
+<div class="highlight__visual">
+<div class="phone-mockup phone-mockup--sm">
+<div class="phone-mockup__notch"></div>
+<div class="phone-mockup__screen phone-mockup__screen--img">
+<img alt="Soil Test Center with AI-powered recommendations" loading="lazy" src="App Images/book-soil-test/book-soil-test-1.png"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Highlight 4: Weather + Market -->
+<div class="highlight highlight--reverse anim-fade-up" id="market-prices">
+<div class="highlight__content">
+<span class="highlight__tag" data-i18n="t_105">Stay Informed, Stay Ahead</span>
+<h2 class="highlight__title" data-i18n="t_106">Weather Alerts &amp; Live Market Prices, Together</h2>
+<p class="highlight__desc" data-i18n="t_107">Weather and market conditions drive farming success. KisanSangam delivers real-time weather forecasts with farming-specific alerts, alongside live mandi prices — so you always know when to act.</p>
+<ul class="highlight__list">
+<li data-i18n="t_108">Location-specific weather forecasts and alerts</li>
+<li data-i18n="t_109">Farming action suggestions based on weather</li>
+<li data-i18n="t_110">Live mandi rates from multiple markets</li>
+<li data-i18n="t_111">Price trend analysis for better selling decisions</li>
+<li data-i18n="t_112">Combined weather-market intelligence for timing</li>
+</ul>
+</div>
+<div class="highlight__visual">
+<div class="phone-mockup phone-mockup--sm">
+<div class="phone-mockup__notch"></div>
+<div class="phone-mockup__screen phone-mockup__screen--img">
+<img alt="Weather forecast with farming advice and alerts" loading="lazy" src="App Images/weather-overview-v2 (1)/weather-overview-v2 (1)-1.png"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Highlight 5: AI Crop Doctor -->
+<div class="highlight anim-fade-up" id="ai-crop-doctor">
+<div class="highlight__content">
+<span class="highlight__tag" data-i18n="t_113">AI-Powered Diagnosis</span>
+<h2 class="highlight__title" data-i18n="t_114">Your Crop Has a Problem? Ask the AI Crop Doctor</h2>
+<p class="highlight__desc" data-i18n="t_115">When something looks wrong with your crop, KisanSangam's AI assistant helps identify diseases, pests, and nutrient deficiencies — and provides clear treatment recommendations.</p>
+<ul class="highlight__list">
+<li data-i18n="t_116">AI-powered crop disease identification</li>
+<li data-i18n="t_117">Pest detection and management guidance</li>
+<li data-i18n="t_118">Nutrient deficiency diagnosis</li>
+<li data-i18n="t_119">Treatment and prevention recommendations</li>
+</ul>
+</div>
+<div class="highlight__visual">
+<div class="phone-mockup phone-mockup--sm">
+<div class="phone-mockup__notch"></div>
+<div class="phone-mockup__screen phone-mockup__screen--img">
+<img alt="KS AI Assistant providing crop disease diagnosis and treatment" loading="lazy" src="App Images/chatbot-screen/chatbot-screen-1.png"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Highlight 6: Profit & Farm Management -->
+<div class="highlight highlight--reverse anim-fade-up">
+<div class="highlight__content">
+<span class="highlight__tag" data-i18n="t_120">Plan, Track, Improve</span>
+<h2 class="highlight__title" data-i18n="t_121">Profit Planning, Farm Records &amp; Resource Sharing</h2>
+<p class="highlight__desc" data-i18n="t_122">Good farming isn't just about growing — it's about managing. KisanSangam helps you plan costs, estimate profits, keep digital farm records, and connect with nearby farmers for equipment sharing.</p>
+<ul class="highlight__list">
+<li data-i18n="t_123">Estimate input costs and expected revenue per crop</li>
+<li data-i18n="t_124">Digital expense and activity tracking</li>
+<li data-i18n="t_125">Season-wise yield history and analysis</li>
+<li data-i18n="t_126">Find and share farming equipment locally</li>
+<li data-i18n="t_127">Discover relevant government schemes and subsidies</li>
+</ul>
+</div>
+<div class="highlight__visual">
+<div class="phone-mockup phone-mockup--sm">
+<div class="phone-mockup__notch"></div>
+<div class="phone-mockup__screen phone-mockup__screen--img">
+<img alt="Profit Report showing cost breakdown and estimated returns" loading="lazy" src="App Images/profit-report/profit-report-1.png"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ HOW IT WORKS ============ -->
+<section class="section section--how" id="how-it-works">
+<div class="container">
+<div class="section__header anim-fade-up">
+<span class="section__tag" data-i18n="t_128">Simple to Use</span>
+<h2 class="section__title" data-i18n="t_129">How KisanSangam Works</h2>
+<p class="section__desc" data-i18n="t_130">Getting started is easy. KisanSangam guides you through every step of the farming journey.</p>
+</div>
+<div class="how-steps">
+<div class="how-step anim-fade-up">
+<div class="how-step__num">1</div>
+<h3 data-i18n="t_131">Enter Your Farm Details</h3>
+<p data-i18n="t_132">Share your farm location, size, soil type, and water source to build your farming profile.</p>
+</div>
+<div class="how-step anim-fade-up" style="animation-delay: 0.08s">
+<div class="how-step__num">2</div>
+<h3 data-i18n="t_133">Get Crop Recommendations</h3>
+<p data-i18n="t_134">Receive AI-powered crop suggestions that match your soil, climate, and market conditions.</p>
+</div>
+<div class="how-step anim-fade-up" style="animation-delay: 0.16s">
+<div class="how-step__num">3</div>
+<h3 data-i18n="t_135">Follow Crop Guidance</h3>
+<p data-i18n="t_136">Access step-by-step cultivation instructions for your selected crop, from sowing to harvest.</p>
+</div>
+<div class="how-step anim-fade-up" style="animation-delay: 0.24s">
+<div class="how-step__num">4</div>
+<h3 data-i18n="t_137">Track Weather &amp; Markets</h3>
+<p data-i18n="t_138">Stay updated with location-specific weather alerts and live mandi prices for smart timing.</p>
+</div>
+<div class="how-step anim-fade-up" style="animation-delay: 0.32s">
+<div class="how-step__num">5</div>
+<h3 data-i18n="t_139">Manage &amp; Solve Issues</h3>
+<p data-i18n="t_140">Keep digital farm records and use AI Crop Doctor when your crop needs diagnosis or help.</p>
+</div>
+<div class="how-step anim-fade-up" style="animation-delay: 0.4s">
+<div class="how-step__num">6</div>
+<h3 data-i18n="t_141">Plan &amp; Access Resources</h3>
+<p data-i18n="t_142">Use profit planning, equipment sharing, land leasing, and discover government schemes.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ WHY KISANSANGAM ============ -->
+<section class="section section--why" id="why-kisansangam">
+<div class="container">
+<div class="section__header anim-fade-up">
+<span class="section__tag" data-i18n="t_143">The Difference</span>
+<h2 class="section__title" data-i18n="t_144">Why Choose KisanSangam?</h2>
+<p class="section__desc" data-i18n="t_145">Most farming tools solve only one problem. KisanSangam supports the entire farming lifecycle.</p>
+</div>
+<div class="why-grid">
+<div class="why-card anim-fade-up">
+<div class="why-card__icon">
+<svg fill="none" height="32" viewbox="0 0 32 32" width="32"><circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"></circle><path d="M10 16H22M16 10V22" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path></svg>
+</div>
+<h3 data-i18n="t_146">All-in-One Platform</h3>
+<p data-i18n="t_147">Stop switching between multiple apps and websites. Everything from soil to selling is in one place.</p>
+</div>
+<div class="why-card anim-fade-up" style="animation-delay: 0.06s">
+<div class="why-card__icon">
+<svg fill="none" height="32" viewbox="0 0 32 32" width="32"><path d="M16 6L19 12L26 13L21 18L22 25L16 22L10 25L11 18L6 13L13 12L16 6Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+</div>
+<h3 data-i18n="t_148">AI + Practical Guidance</h3>
+<p data-i18n="t_149">Not just smart algorithms — actionable, farmer-friendly guidance you can actually follow in the field.</p>
+</div>
+<div class="why-card anim-fade-up" style="animation-delay: 0.12s">
+<div class="why-card__icon">
+<svg fill="none" height="32" viewbox="0 0 32 32" width="32"><circle cx="16" cy="12" r="5" stroke="currentColor" stroke-width="1.8"></circle><path d="M8 26C8 22 11.5 19 16 19C20.5 19 24 22 24 26" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><path d="M16 12V9M13.5 10L14.5 12M18.5 10L17.5 12" stroke="currentColor" stroke-linecap="round" stroke-width="1.2"></path></svg>
+</div>
+<h3 data-i18n="t_150">Personalized for You</h3>
+<p data-i18n="t_151">Recommendations tailored to your specific farm, soil, location, and farming context — not generic advice.</p>
+</div>
+<div class="why-card anim-fade-up" style="animation-delay: 0.18s">
+<div class="why-card__icon">
+<svg fill="none" height="32" viewbox="0 0 32 32" width="32"><path d="M6 16H10L13 10L16 22L19 14L22 18H26" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+</div>
+<h3 data-i18n="t_152">Locally Relevant</h3>
+<p data-i18n="t_153">Built with Indian agriculture in mind — local crops, local mandis, local weather, and local farming practices.</p>
+</div>
+<div class="why-card anim-fade-up" style="animation-delay: 0.24s">
+<div class="why-card__icon">
+<svg fill="none" height="32" viewbox="0 0 32 32" width="32"><path d="M16 4V28M4 16H28" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><path d="M8 8L24 24M24 8L8 24" opacity="0.3" stroke="currentColor" stroke-linecap="round" stroke-width="1.2"></path><circle cx="16" cy="16" r="6" stroke="currentColor" stroke-width="1.8"></circle></svg>
+</div>
+<h3 data-i18n="t_154">Full Lifecycle Support</h3>
+<p data-i18n="t_155">Supports every decision from pre-season planning to post-harvest management and profit tracking.</p>
+</div>
+<div class="why-card anim-fade-up" style="animation-delay: 0.3s">
+<div class="why-card__icon">
+<svg fill="none" height="32" viewbox="0 0 32 32" width="32"><path d="M16 6C10 6 6 10 6 16C6 22 10 26 16 26C22 26 26 22 26 16" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"></path><path d="M16 6C20 6 22 10 22 16" stroke="currentColor" stroke-dasharray="3 3" stroke-linecap="round" stroke-width="1.8"></path><path d="M26 8L22 12L18 8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg>
+</div>
+<h3 data-i18n="t_156">Reduces Guesswork</h3>
+<p data-i18n="t_157">Data-driven decisions replace uncertainty — less risk, better planning, and improved farming outcomes.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ LAUNCHING SOON ============ -->
+<section class="section section--launch" id="launching-soon">
+<div class="launch-bg">
+<div class="launch-glow"></div>
+</div>
+<div class="container launch__inner">
+<div class="launch__content anim-fade-up">
+<span class="launch__badge" data-i18n="t_158">Coming Soon</span>
+<h2 class="launch__title" data-i18n="t_159">KisanSangam Is<br/>Launching Soon</h2>
+<p class="launch__desc" data-i18n="t_160">The future of connected smart farming is almost here. KisanSangam is being built to bring modern agricultural intelligence, guidance, and practical tools into one simple platform — designed for Indian farmers.</p>
+<p class="launch__desc launch__desc--sm" data-i18n="t_161">Be among the first to experience it. Join the early access list and get notified when we launch.</p>
+<form class="launch__form" id="earlyAccessForm" action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="7b1e9243-ed3f-4607-ba88-b0227a1d2b65">
+  <input type="hidden" name="subject" value="New KisanSangam Early Access Registration!">
+  <div class="launch__form-row">
+    <div class="launch__form-group">
+      <label for="firstName" class="launch__label">First Name</label>
+      <input type="text" id="firstName" name="First Name" class="launch__input" placeholder="Enter first name" required>
     </div>
-    <div class="container hero__inner">
-      <div class="hero__content anim-fade-up">
-        <span class="hero__badge" data-i18n="hero_eyebrow">Agriculture intelligence for Gujarat</span>
-        <h1 class="hero__title" id="hero-heading" data-i18n="hero_title">Better farming decisions.<br/>From the ground up.</h1>
-        <p class="hero__subtitle" data-i18n="hero_subtitle">KisanSangam brings personalized crop recommendations, practical farm guidance, weather updates and market information into one connected platform for better farming decisions.</p>
-        <p class="hero__available" data-i18n="hero_available">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="18" r="1" fill="currentColor"/></svg>
-          Available for Android
-        </p>
-        <div class="hero__ctas">
-          <a class="btn btn--accent btn--lg" data-i18n="hero_cta_primary" href="#/download" id="hero-download-btn">Download Now</a>
-          <a class="btn btn--outline-light btn--lg" data-i18n="hero_cta_secondary" href="#/features">Explore the Platform</a>
-        </div>
-        <p class="hero__support-line" data-i18n="hero_support">Designed for farmers. In English, Hindi and Gujarati.</p>
-      </div>
-      <div class="hero__visual anim-fade-up" style="animation-delay:0.2s" aria-hidden="true">
-        <div class="phone-mockup phone-mockup--hero phone-mockup--android">
-          <div class="phone-mockup__camera"></div>
-          <div class="phone-mockup__screen phone-mockup__screen--img">
-            <img alt="KisanSangam app dashboard showing crop recommendations — illustrative screen with sample data" loading="eager" src="App Images/screen-11-dashboard.png"/>
-            <div class="phone-mockup__screen-label">Illustrative screen — sample data</div>
-          </div>
-        </div>
-        <div class="hero__floating-badges">
-          <span class="floating-badge floating-badge--1 anim-float" data-i18n="hero_badge1">🌾 Crop Guidance</span>
-          <span class="floating-badge floating-badge--2 anim-float" data-i18n="hero_badge2" style="animation-delay:1s">📊 Market Prices</span>
-          <span class="floating-badge floating-badge--3 anim-float" data-i18n="hero_badge3" style="animation-delay:2s">🌦️ Weather Alerts</span>
-        </div>
-      </div>
+    <div class="launch__form-group">
+      <label for="lastName" class="launch__label">Last Name</label>
+      <input type="text" id="lastName" name="Last Name" class="launch__input" placeholder="Enter last name" required>
     </div>
-    <div class="hero__wave" aria-hidden="true">
-      <svg fill="none" preserveAspectRatio="none" viewBox="0 0 1440 100"><path d="M0 40C360 80 720 0 1080 40C1260 60 1380 50 1440 40V100H0V40Z" fill="#F7F5EE"/></svg>
-    </div>
-  </section>
+  </div>
+  <div class="launch__form-group">
+    <label for="email" class="launch__label">Email Address</label>
+    <input type="email" id="email" name="Email" class="launch__input" placeholder="Enter your email" required>
+  </div>
+  <div class="launch__form-group">
+    <label for="phone" class="launch__label">Phone Number</label>
+    <input type="tel" id="phone" name="Phone" class="launch__input" placeholder="Enter your phone number" required>
+  </div>
+  <div class="launch__form-group">
+    <label for="message" class="launch__label">Message (Optional)</label>
+    <textarea id="message" name="Message" class="launch__input launch__textarea" placeholder="Tell us about your farm" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn--accent btn--lg launch__submit" id="earlyAccessBtn" data-i18n="t_162">Get Early Access</button>
+  <p class="launch__privacy" data-i18n="t_163">We respect your privacy. No spam, ever.</p>
+</form>
+<div class="launch__platforms">
+  <span data-i18n="t_164">Soon available on:</span>
+  <div class="launch__platform-icons">
+    <span class="platform-badge" data-i18n="t_165">📱 Android</span>
+    <span class="platform-badge" data-i18n="t_166">🌐 Web App</span>
+  </div>
+</div>
+</div>
+<div class="launch__visual anim-fade-up" style="animation-delay:0.15s">
+  <div class="premium-showcase">
+    <!-- Badge -->
+    <div class="premium-badge"><span>App Preview</span></div>
 
-  <!-- CONTEXT STRIP -->
-  <section class="context-strip" aria-label="Platform context">
-    <div class="container context-strip__inner">
-      <div class="context-item">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg>
-        <span data-i18n="ctx_gujarat">Gujarat focus, Narmada region</span>
-      </div>
-      <div class="context-divider" aria-hidden="true"></div>
-      <div class="context-item">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="currentColor" stroke-width="2"/></svg>
-        <span data-i18n="ctx_languages">English, हिन्दी, ગુજરાતી</span>
-      </div>
-      <div class="context-divider" aria-hidden="true"></div>
-      <div class="context-item">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-        <span data-i18n="ctx_free">No platform subscription charge</span>
-      </div>
-      <div class="context-divider" aria-hidden="true"></div>
-      <div class="context-item">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 19.25a1 1 0 0 0 .9 1.5h15.56a1 1 0 0 0 .9-1.5C18.4 16 16 10 17 8z" stroke="currentColor" stroke-width="2"/><path d="M12 2v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-        <span data-i18n="ctx_organic">Organic farming support</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRODUCT STORY -->
-  <section class="section section--story" id="product-story" aria-labelledby="story-heading">
-    <div class="container">
-      <div class="section__header anim-fade-up">
-        <span class="section__tag" data-i18n="story_tag">How It Connects</span>
-        <h2 class="section__title" id="story-heading" data-i18n="story_title">One farm. Connected decisions.</h2>
-        <p class="section__desc" data-i18n="story_desc">Your farm profile and soil information support crop selection. The selected crop leads into a practical farm guide. Weather, task reminders and market information help throughout the season.</p>
-      </div>
-      <div class="story-steps">
-        <div class="story-step anim-fade-up">
-          <div class="story-step__visual">
-            <div class="phone-mockup phone-mockup--sm phone-mockup--android">
-              <div class="phone-mockup__camera"></div>
-              <div class="phone-mockup__screen phone-mockup__screen--img">
-                <img alt="Farm profile setup — illustrative screen with sample data" loading="lazy" src="App Images/screen-my-farms/screen-my-farms-1.png"/>
-              </div>
-            </div>
-          </div>
-          <div class="story-step__content">
-            <div class="story-step__num" aria-hidden="true">1</div>
-            <h3 data-i18n="story_step1_title">Build your farm profile</h3>
-            <p data-i18n="story_step1_desc">Share your location, soil information and water availability to get guidance suited to your farm.</p>
-          </div>
-        </div>
-        <div class="story-step story-step--reverse anim-fade-up">
-          <div class="story-step__visual">
-            <div class="phone-mockup phone-mockup--sm phone-mockup--android">
-              <div class="phone-mockup__camera"></div>
-              <div class="phone-mockup__screen phone-mockup__screen--img">
-                <img alt="Crop recommendation screen — illustrative screen with sample data" loading="lazy" src="App Images/screen-16-top-5-crops (1)/screen-16-top-5-crops (1)-1.png"/>
-              </div>
-            </div>
-          </div>
-          <div class="story-step__content">
-            <div class="story-step__num" aria-hidden="true">2</div>
-            <h3 data-i18n="story_step2_title">Select the right crop</h3>
-            <p data-i18n="story_step2_desc">Compare suitable crop options with clear reasons supporting each choice, then select the one that fits your season.</p>
-          </div>
-        </div>
-        <div class="story-step anim-fade-up">
-          <div class="story-step__visual">
-            <div class="phone-mockup phone-mockup--sm phone-mockup--android">
-              <div class="phone-mockup__camera"></div>
-              <div class="phone-mockup__screen phone-mockup__screen--img">
-                <img alt="Farm guide stage view — illustrative screen with sample data" loading="lazy" src="App Images/farm-guide-screen/farm-guide-screen-1.png"/>
-              </div>
-            </div>
-          </div>
-          <div class="story-step__content">
-            <div class="story-step__num" aria-hidden="true">3</div>
-            <h3 data-i18n="story_step3_title">Follow through the season</h3>
-            <p data-i18n="story_step3_desc">Your farm guide, weather alerts, reminders and market information are there throughout the season to support your decisions.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURE SPOTLIGHT 1: Crop Recommendation -->
-  <section class="section section--spotlight" id="spotlight-crop" aria-labelledby="spotlight-crop-heading">
-    <div class="container spotlight">
-      <div class="spotlight__content anim-fade-up">
-        <span class="spotlight__tag" data-i18n="spot1_tag">Intelligent Crop Selection</span>
-        <h2 class="spotlight__title" id="spotlight-crop-heading" data-i18n="spot1_title">Advanced Personalized Crop Recommendation</h2>
-        <p class="spotlight__desc" data-i18n="spot1_desc">Compare suitable crop options using your farm location, season, soil information and water availability, with clear reasons to support your choice.</p>
-        <ul class="spotlight__list">
-          <li data-i18n="spot1_li1">Accounts for soil type, nutrients and local season</li>
-          <li data-i18n="spot1_li2">Shows reasoning behind each recommendation</li>
-          <li data-i18n="spot1_li3">Compares multiple suitable options side by side</li>
-          <li data-i18n="spot1_li4">Supports organic and conventional farming approaches</li>
-        </ul>
-        <a class="btn btn--primary" href="#/features/crop-recommendation" data-i18n="spot_learn_more">Learn More →</a>
-      </div>
-      <div class="spotlight__visual anim-fade-up" style="animation-delay:0.15s">
-        <div class="phone-mockup phone-mockup--md phone-mockup--android">
-          <div class="phone-mockup__camera"></div>
-          <div class="phone-mockup__screen phone-mockup__screen--img">
-            <img alt="AI Crop Recommendation showing top crop matches — illustrative screen with sample data" loading="lazy" src="App Images/screen-16-top-5-crops (1)/screen-16-top-5-crops (1)-1.png"/>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURE SPOTLIGHT 2: Farm Guide -->
-  <section class="section section--spotlight section--spotlight-alt" id="spotlight-guide" aria-labelledby="spotlight-guide-heading">
-    <div class="container spotlight spotlight--reverse">
-      <div class="spotlight__content anim-fade-up">
-        <span class="spotlight__tag" data-i18n="spot2_tag">Stage-by-Stage Guidance</span>
-        <h2 class="spotlight__title" id="spotlight-guide-heading" data-i18n="spot2_title">Advanced Personalized Farm Guide</h2>
-        <p class="spotlight__desc" data-i18n="spot2_desc">Turn your selected crop into a practical, stage-by-stage plan, with activities, reminders and guidance you can return to throughout the season.</p>
-        <ul class="spotlight__list">
-          <li data-i18n="spot2_li1">Covers sowing, growth stages, fertilization and harvest</li>
-          <li data-i18n="spot2_li2">Timing guidance for each major activity</li>
-          <li data-i18n="spot2_li3">Pest and disease prevention guidance</li>
-          <li data-i18n="spot2_li4">Organized by the actual stages of your crop's cycle</li>
-        </ul>
-        <a class="btn btn--primary" href="#/features/farm-guide" data-i18n="spot_learn_more">Learn More →</a>
-      </div>
-      <div class="spotlight__visual anim-fade-up" style="animation-delay:0.15s">
-        <div class="phone-mockup phone-mockup--md phone-mockup--android">
-          <div class="phone-mockup__camera"></div>
-          <div class="phone-mockup__screen phone-mockup__screen--img">
-            <img alt="Farm guide with stage-by-stage farming steps — illustrative screen with sample data" loading="lazy" src="App Images/farm-guide-screen/farm-guide-screen-1.png"/>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ORGANIC FARMING SPOTLIGHT -->
-  <section class="section section--organic" id="organic-home" aria-labelledby="organic-home-heading">
-    <div class="container organic-banner anim-fade-up">
-      <div class="organic-banner__icon" aria-hidden="true">
-        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"><path d="M24 4C24 4 12 16 12 26C12 32.627 17.373 38 24 38C30.627 38 36 32.627 36 26C36 16 24 4 24 4Z" stroke="#286846" stroke-width="2.5" fill="#E8F0E2"/><path d="M24 16V38" stroke="#286846" stroke-width="2" stroke-linecap="round"/><path d="M18 22C20.5 19.5 24 19 24 19" stroke="#286846" stroke-width="1.8" stroke-linecap="round"/><path d="M30 25.5C27.5 24 24 23.5 24 23.5" stroke="#286846" stroke-width="1.8" stroke-linecap="round"/><path d="M24 38H24" stroke="#286846" stroke-width="3" stroke-linecap="round"/><path d="M16 44H32" stroke="#286846" stroke-width="2.5" stroke-linecap="round"/></svg>
-      </div>
-      <div class="organic-banner__content">
-        <span class="organic-banner__tag" data-i18n="organic_tag">Organic Farming</span>
-        <h2 class="organic-banner__title" id="organic-home-heading" data-i18n="organic_title">A dedicated path for organic farming.</h2>
-        <p class="organic-banner__desc" data-i18n="organic_desc">Explore crop recommendations and farm guidance for organic cultivation, with attention to soil health, organic nutrient sources and suitable crop-care practices.</p>
-        <p class="organic-banner__clarifier" data-i18n="organic_clarifier">Availability depends on the crop and locally supported guidance. Organic guidance does not certify a farm or its produce.</p>
-        <a class="btn btn--primary" href="#/organic-farming" data-i18n="organic_cta">Explore Organic Farming →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CAPABILITY OVERVIEW (6 cards) -->
-  <section class="section section--capabilities" id="capabilities-home" aria-labelledby="cap-heading">
-    <div class="container">
-      <div class="section__header anim-fade-up">
-        <span class="section__tag" data-i18n="cap_tag">Platform Capabilities</span>
-        <h2 class="section__title" id="cap-heading" data-i18n="cap_title">Everything a farmer needs, connected.</h2>
-        <p class="section__desc" data-i18n="cap_desc">12 integrated capabilities working together across your farming season.</p>
-      </div>
-      <div class="cap-grid">
-        <div class="cap-card anim-fade-up">
-          <div class="cap-card__icon cap-card__icon--green">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C12 2 6 8 6 13C6 16.314 8.686 19 12 19C15.314 19 18 16.314 18 13C18 8 12 2 12 2Z" stroke="currentColor" stroke-width="1.8"/><path d="M12 8V19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </div>
-          <h3 class="cap-card__title" data-i18n="cap1_title">Crop Recommendation</h3>
-          <p class="cap-card__desc" data-i18n="cap1_desc">Personalized suggestions based on your soil, location, season and water availability.</p>
-          <a class="cap-card__link" href="#/features/crop-recommendation" data-i18n="cap_more">Learn more →</a>
-        </div>
-        <div class="cap-card anim-fade-up" style="animation-delay:0.05s">
-          <div class="cap-card__icon cap-card__icon--teal">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M8 8H16M8 12H16M8 16H12" stroke="currentColor" stroke-linecap="round" stroke-width="1.3"/></svg>
-          </div>
-          <h3 class="cap-card__title" data-i18n="cap2_title">Farm Guide</h3>
-          <p class="cap-card__desc" data-i18n="cap2_desc">Stage-by-stage cultivation guidance from sowing through to harvest.</p>
-          <a class="cap-card__link" href="#/features/farm-guide" data-i18n="cap_more">Learn more →</a>
-        </div>
-        <div class="cap-card anim-fade-up" style="animation-delay:0.1s">
-          <div class="cap-card__icon cap-card__icon--gold">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 17L8 12L12 15L17 8L21 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/><path d="M3 21H21" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/></svg>
-          </div>
-          <h3 class="cap-card__title" data-i18n="cap3_title">Market Prices</h3>
-          <p class="cap-card__desc" data-i18n="cap3_desc">Latest available mandi rates with source and date context.</p>
-          <a class="cap-card__link" href="#/features/market-prices" data-i18n="cap_more">Learn more →</a>
-        </div>
-        <div class="cap-card anim-fade-up" style="animation-delay:0.15s">
-          <div class="cap-card__icon cap-card__icon--blue">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8.5 19C5.5 19 3 16.5 3 13.5C3 10.7 5.1 8.4 7.8 8.1C8.8 5.7 11.2 4 14 4C17.9 4 21 7.1 21 11C21 11.1 21 11.2 21 11.3C22.7 11.9 24 13.5 24 15.5" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"/><path d="M13 9V14" stroke="currentColor" stroke-linecap="round" stroke-width="2"/><circle cx="13" cy="17" r="1.5" fill="currentColor"/></svg>
-          </div>
-          <h3 class="cap-card__title" data-i18n="cap4_title">Weather Forecasts</h3>
-          <p class="cap-card__desc" data-i18n="cap4_desc">Location-specific forecasts and farming-relevant weather alerts.</p>
-          <a class="cap-card__link" href="#/features/weather" data-i18n="cap_more">Learn more →</a>
-        </div>
-        <div class="cap-card anim-fade-up" style="animation-delay:0.2s">
-          <div class="cap-card__icon cap-card__icon--red">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 22V20" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/><path d="M12 20C6 20 3 14 3 8C9 8 12 14 12 20Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"/><path d="M12 20C18 20 21 14 21 8C15 8 12 14 12 20Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"/></svg>
-          </div>
-          <h3 class="cap-card__title" data-i18n="cap5_title">AI Farming Assistant</h3>
-          <p class="cap-card__desc" data-i18n="cap5_desc">Get possible causes and guidance for crop issues with AI-supported help.</p>
-          <a class="cap-card__link" href="#/features/ai-assistant" data-i18n="cap_more">Learn more →</a>
-        </div>
-        <div class="cap-card anim-fade-up" style="animation-delay:0.25s">
-          <div class="cap-card__icon cap-card__icon--orange">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2Z" stroke="currentColor" stroke-width="1.8"/><path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg>
-          </div>
-          <h3 class="cap-card__title" data-i18n="cap6_title">Farm Management</h3>
-          <p class="cap-card__desc" data-i18n="cap6_desc">Digital records of activities, costs, and farm history in one place.</p>
-          <a class="cap-card__link" href="#/features/farm-management" data-i18n="cap_more">Learn more →</a>
-        </div>
-      </div>
-      <div class="cap-grid__cta anim-fade-up">
-        <a class="btn btn--outline" href="#/features" data-i18n="cap_view_all" id="view-all-features">View All 12 Features →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- RESPONSIBLE INPUT USE -->
-  <section class="section section--responsible" id="responsible-inputs" aria-labelledby="resp-heading">
-    <div class="container">
-      <div class="responsible-inner anim-fade-up">
-        <div class="responsible__icon" aria-hidden="true">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="17" stroke="#286846" stroke-width="2"/><path d="M13 20H27M20 13V27" stroke="#286846" stroke-width="2.5" stroke-linecap="round"/></svg>
-        </div>
-        <div class="responsible__content">
-          <h2 id="resp-heading" data-i18n="resp_title">Make every input a considered decision.</h2>
-          <p data-i18n="resp_desc">Soil-informed planning can help farmers understand nutrient needs and avoid unnecessary fertilizer use. Recommendations depend on reliable soil information, crop needs and local conditions.</p>
-          <p class="responsible__note" data-i18n="resp_note">Results vary by farm. KisanSangam does not promise a specific outcome for every farm.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- LOCAL FOCUS -->
-  <section class="section section--local" id="local-focus" aria-labelledby="local-heading">
-    <div class="container">
-      <div class="local-inner">
-        <div class="local__content anim-fade-up">
-          <span class="section__tag" data-i18n="local_tag">Where We Work</span>
-          <h2 id="local-heading" data-i18n="local_title">Built with Gujarat's farming context in mind.</h2>
-          <p data-i18n="local_desc">KisanSangam's initial focus is on Gujarat, with the Narmada region as the starting point for locally supported crop information. Soil, water, season and local crop evidence matter — and they vary by location.</p>
-          <p class="local__note" data-i18n="local_note">Availability of specific crops, features and guidance varies by location. We are continually expanding coverage.</p>
-        </div>
-        <div class="local__visual anim-fade-up" style="animation-delay:0.15s" aria-hidden="true">
-          <div class="local__map-block">
-            <svg width="200" height="220" viewBox="0 0 200 220" fill="none" aria-hidden="true">
-              <!-- Simplified Gujarat outline placeholder -->
-              <rect x="20" y="20" width="160" height="180" rx="12" fill="#E8F0E2" stroke="#DCE4D8" stroke-width="1.5"/>
-              <circle cx="100" cy="110" r="18" fill="#286846" opacity="0.15"/>
-              <circle cx="100" cy="110" r="8" fill="#286846"/>
-              <circle cx="100" cy="110" r="3" fill="#F7F5EE"/>
-              <text x="100" y="150" text-anchor="middle" fill="#286846" font-size="11" font-family="Inter">Narmada Region</text>
-              <text x="100" y="50" text-anchor="middle" fill="#55645C" font-size="13" font-family="Inter" font-weight="600">Gujarat</text>
-              <path d="M100 92 L100 85" stroke="#286846" stroke-width="1.5" stroke-dasharray="3 2"/>
-            </svg>
-            <p class="local__map-note">Focus area — initial coverage</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOUNDERS / PEOPLE -->
-  <section class="section section--founders" id="founders-home" aria-labelledby="founders-heading">
-    <div class="container">
-      <div class="section__header anim-fade-up">
-        <span class="section__tag" data-i18n="founders_tag">The Team</span>
-        <h2 id="founders-heading" data-i18n="founders_title">People behind KisanSangam</h2>
-        <p class="section__desc" data-i18n="founders_desc">KisanSangam is built by three co-founders committed to making practical agricultural information more accessible for farmers.</p>
-      </div>
-      <div class="founders-grid">
-        <div class="founder-card anim-fade-up">
-          <div class="founder-card__avatar" aria-label="Manav Patel">
-            <span class="founder-card__initials">MP</span>
-          </div>
-          <h3 class="founder-card__name">Manav Patel</h3>
-          <p class="founder-card__role" data-i18n="founder_cofounder">Co-Founder</p>
-        </div>
-        <div class="founder-card anim-fade-up" style="animation-delay:0.08s">
-          <div class="founder-card__avatar" aria-label="Vivek Patel">
-            <span class="founder-card__initials">VP</span>
-          </div>
-          <h3 class="founder-card__name">Vivek Patel</h3>
-          <p class="founder-card__role" data-i18n="founder_cofounder">Co-Founder</p>
-        </div>
-        <div class="founder-card anim-fade-up" style="animation-delay:0.16s">
-          <div class="founder-card__avatar" aria-label="Meet Barot">
-            <span class="founder-card__initials">MB</span>
-          </div>
-          <h3 class="founder-card__name">Meet Barot</h3>
-          <p class="founder-card__role" data-i18n="founder_cofounder">Co-Founder</p>
-        </div>
-      </div>
-      <div class="founders-mission anim-fade-up">
-        <blockquote class="founders-mission__quote">
-          <p data-i18n="founders_mission">"Make practical agricultural information easier to understand and use, so farmers can plan with greater confidence."</p>
-          <footer><a href="#/about" class="btn btn--outline btn--sm" data-i18n="founders_about_link">Learn About Us →</a></footer>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <!-- COLLABORATION -->
-  <section class="section section--collab" id="collaboration" aria-labelledby="collab-heading">
-    <div class="container">
-      <div class="collab-inner anim-fade-up">
-        <h2 id="collab-heading" data-i18n="collab_title">Work with us to support better farming decisions.</h2>
-        <p data-i18n="collab_desc">We welcome conversations with farmer groups, agricultural institutions, researchers and ecosystem partners interested in practical, locally relevant digital agriculture.</p>
-        <a class="btn btn--primary btn--lg" href="#/contact?type=collaboration" data-i18n="collab_cta" id="collab-cta">Discuss a Collaboration</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section section--faq" id="faq" aria-labelledby="faq-heading">
-    <div class="container">
-      <div class="section__header anim-fade-up">
-        <span class="section__tag" data-i18n="faq_tag">Questions</span>
-        <h2 id="faq-heading" data-i18n="faq_title">Frequently Asked Questions</h2>
-      </div>
-      <div class="faq-list" id="faqList">
-        <div class="faq-item anim-fade-up">
-          <button class="faq-item__q" aria-expanded="false" data-i18n="faq_q1">What is KisanSangam?</button>
-          <div class="faq-item__a" role="region" hidden>
-            <p data-i18n="faq_a1">KisanSangam is an agriculture decision support platform for Gujarat farmers. It brings personalized crop recommendations, practical farm guidance, weather updates, market information and more into one connected Android app.</p>
-          </div>
-        </div>
-        <div class="faq-item anim-fade-up">
-          <button class="faq-item__q" aria-expanded="false" data-i18n="faq_q2">Who is it designed for, and which locations and crops does it support?</button>
-          <div class="faq-item__a" role="region" hidden>
-            <p data-i18n="faq_a2">KisanSangam is designed for Gujarat farmers, with the Narmada region as the initial focus for locally supported crop information. Coverage of crops and locations is expanding. Availability of specific guidance varies by crop, feature and location.</p>
-          </div>
-        </div>
-        <div class="faq-item anim-fade-up">
-          <button class="faq-item__q" aria-expanded="false" data-i18n="faq_q3">How do I get the app?</button>
-          <div class="faq-item__a" role="region" hidden>
-            <p data-i18n="faq_a3">Download the Android APK from our official <a href="#/download">download page</a> and follow the installation instructions.</p>
-          </div>
-        </div>
-        <div class="faq-item anim-fade-up">
-          <button class="faq-item__q" aria-expanded="false" data-i18n="faq_q4">Is Soil Testing available?</button>
-          <div class="faq-item__a" role="region" hidden>
-            <p data-i18n="faq_a4">Soil Testing is coming soon. You can download and use KisanSangam's other features now. All other 11 features are currently available in the app.</p>
-          </div>
-        </div>
-        <div class="faq-item anim-fade-up">
-          <button class="faq-item__q" aria-expanded="false" data-i18n="faq_q5">When will Soil Testing launch?</button>
-          <div class="faq-item__a" role="region" hidden>
-            <p data-i18n="faq_a5">We'll share availability updates when it is ready. We do not have a confirmed date to share.</p>
-          </div>
-        </div>
-        <div class="faq-item anim-fade-up">
-          <button class="faq-item__q" aria-expanded="false" data-i18n="faq_q6">Is the app on Google Play or iPhone?</button>
-          <div class="faq-item__a" role="region" hidden>
-            <p data-i18n="faq_a6">KisanSangam is currently distributed as a direct Android APK download from our website. It is not available on the Google Play Store or Apple App Store at this time.</p>
-          </div>
-        </div>
-        <div class="faq-item anim-fade-up">
-          <button class="faq-item__q" aria-expanded="false" data-i18n="faq_q7">Is there a subscription or usage charge?</button>
-          <div class="faq-item__a" role="region" hidden>
-            <p data-i18n="faq_a7">There is no platform subscription or platform usage charge. The owner's current model does not include a charge for using KisanSangam's core features. Standard data charges from your mobile network may apply.</p>
-          </div>
-        </div>
-        <div class="faq-item anim-fade-up">
-          <button class="faq-item__q" aria-expanded="false" data-i18n="faq_q8">Which languages are supported?</button>
-          <div class="faq-item__a" role="region" hidden>
-            <p data-i18n="faq_a8">KisanSangam supports English, Hindi (हिन्दी) and Gujarati (ગુજરાતી). The website and app interface are available in all three languages.</p>
-          </div>
-        </div>
-        <div class="faq-item anim-fade-up">
-          <button class="faq-item__q" aria-expanded="false" data-i18n="faq_q9">Does KisanSangam support organic farming?</button>
-          <div class="faq-item__a" role="region" hidden>
-            <p data-i18n="faq_a9">Yes. KisanSangam includes crop recommendations and farm guidance for organic cultivation — covering farming without synthetic chemical fertilizers or pesticides. Organic support focuses on soil health, organic nutrient sources and suitable crop-care practices. Availability depends on the crop and locally supported guidance. Organic guidance does not certify a farm or its produce.</p>
-          </div>
-        </div>
-        <div class="faq-item anim-fade-up">
-          <button class="faq-item__q" aria-expanded="false" data-i18n="faq_q10">Do I need a soil test to use the platform?</button>
-          <div class="faq-item__a" role="region" hidden>
-            <p data-i18n="faq_a10">No. You can use KisanSangam's crop recommendation and farm guidance features with the soil information you already have. Providing soil data improves recommendation quality, but it is not required to start using the app. The Soil Testing feature, which will connect with third-party testing services, is coming soon and is not required to use the platform.</p>
-          </div>
-        </div>
-        <div class="faq-item anim-fade-up">
-          <button class="faq-item__q" aria-expanded="false" data-i18n="faq_q11">Are crop suggestions, AI explanations and profit estimates guarantees?</button>
-          <div class="faq-item__a" role="region" hidden>
-            <p data-i18n="faq_a11">No. Crop recommendations, AI guidance and profit estimates are decision-support tools based on the information you provide and available data. They are not guarantees of yield, profit or outcome. Actual results depend on many factors including weather, soil conditions, farming practices and market movements.</p>
-          </div>
-        </div>
-        <div class="faq-item anim-fade-up">
-          <button class="faq-item__q" aria-expanded="false" data-i18n="faq_q12">How recent are market prices and weather updates?</button>
-          <div class="faq-item__a" role="region" hidden>
-            <p data-i18n="faq_a12">Market prices show the latest available reported rates with source and date context. Weather forecasts are location-specific and updated regularly. Neither can be guaranteed to be real-time or perfectly current at every moment.</p>
-          </div>
-        </div>
-        <div class="faq-item anim-fade-up">
-          <button class="faq-item__q" aria-expanded="false" data-i18n="faq_q13">Does KisanSangam approve government scheme applications?</button>
-          <div class="faq-item__a" role="region" hidden>
-            <p data-i18n="faq_a13">No. KisanSangam provides information about relevant government agricultural schemes and official application destinations. We do not approve applications, guarantee eligibility or process applications on your behalf.</p>
-          </div>
-        </div>
-        <div class="faq-item anim-fade-up">
-          <button class="faq-item__q" aria-expanded="false" data-i18n="faq_q14">How do I request support or deletion of my information?</button>
-          <div class="faq-item__a" role="region" hidden>
-            <p data-i18n="faq_a14">For product support or to request deletion of your information, please use our <a href="#/contact">contact page</a> or submit a <a href="#/data-request">data request</a>. You can also reach us at <a href="mailto:manavpatel.cloud@gmail.com">manavpatel.cloud@gmail.com</a>.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CLOSING CTA -->
-  <section class="section section--closing-cta" id="closing-cta" aria-labelledby="closing-cta-heading">
-    <div class="container">
-      <div class="closing-cta-inner anim-fade-up">
-        <h2 id="closing-cta-heading" data-i18n="closing_title">Download KisanSangam today.</h2>
-        <p data-i18n="closing_desc">Better farming decisions start with better information. KisanSangam is available now for Android.</p>
-        <div class="closing-cta__buttons">
-          <a class="btn btn--accent btn--lg" href="#/download" data-i18n="closing_cta_download" id="closing-download-btn">Download Now</a>
-          <a class="btn btn--outline btn--lg" href="#/contact" data-i18n="closing_cta_contact">Contact the Team</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</div><!-- end page-home -->
-
-
-<!-- ============ FEATURES PAGE ============ -->
-<div id="page-features" class="page" hidden>
-  <section class="page-hero page-hero--green" aria-labelledby="features-page-heading">
-    <div class="container">
-      <span class="page-hero__tag" data-i18n="feat_tag">Platform</span>
-      <h1 class="page-hero__title" id="features-page-heading" data-i18n="feat_title">12 capabilities. One platform.</h1>
-      <p class="page-hero__desc" data-i18n="feat_desc">Grouped by the farming tasks they support. Only Soil Testing is coming soon — all other features are available now.</p>
-    </div>
-  </section>
-
-  <section class="section" aria-label="Plan your season features">
-    <div class="container">
-      <h2 class="features-group__title" data-i18n="feat_group1">Plan Your Season</h2>
-      <div class="features-full-grid" id="features-grid-plan">
-        <!-- Crop Recommendation -->
-        <div class="feat-card feat-card--interactive anim-fade-up" data-feature-id="f1">
-          <div class="feat-card__icon feat-card__icon--green">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 3C14 3 8 9 8 15C8 18.3 10.7 21 14 21C17.3 21 20 18.3 20 15C20 9 14 3 14 3Z" stroke="currentColor" stroke-width="1.8"/><path d="M14 10V21" stroke="currentColor" stroke-width="1.5"/><path d="M6 24H22" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/></svg>
-          </div>
-          <h3 class="feat-card__title" data-i18n="f1_title">Advanced Personalized Crop Recommendation</h3>
-          <p class="feat-card__desc" data-i18n="f1_desc">Compare suitable crop options using your farm location, season, soil information and water availability, with clear reasons to support your choice.</p>
-          <a class="feat-card__link" href="#/features/crop-recommendation" data-i18n="feat_detail">View details →</a>
-        </div>
-        <!-- Farm Guide -->
-        <div class="feat-card feat-card--interactive anim-fade-up" style="animation-delay:0.05s" data-feature-id="f2">
-          <div class="feat-card__icon feat-card__icon--teal">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="5" y="3" width="18" height="22" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M9 8H19M9 12H19M9 16H15" stroke="currentColor" stroke-linecap="round" stroke-width="1.3"/></svg>
-          </div>
-          <h3 class="feat-card__title" data-i18n="f2_title">Advanced Personalized Farm Guide</h3>
-          <p class="feat-card__desc" data-i18n="f2_desc">Turn your selected crop into a practical, stage-by-stage plan with activities, reminders and guidance for the whole season.</p>
-          <a class="feat-card__link" href="#/features/farm-guide" data-i18n="feat_detail">View details →</a>
-        </div>
-        <!-- Soil Testing — Coming Soon -->
-        <div class="feat-card feat-card--coming-soon anim-fade-up" style="animation-delay:0.1s">
-          <div class="feat-card__coming-badge" data-i18n="coming_soon_badge">Coming Soon</div>
-          <div class="feat-card__icon feat-card__icon--brown">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M6 14C6 14 8 13 14 13C20 13 22 14 22 14V22C22 24.2 20.2 26 18 26H10C7.8 26 6 24.2 6 22V14Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"/><path d="M6 18.5H22" stroke="currentColor" stroke-dasharray="3 3" stroke-linecap="round" stroke-width="1.8"/><path d="M14 13V5" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/></svg>
-          </div>
-          <h3 class="feat-card__title" data-i18n="f3_title">Soil Testing</h3>
-          <p class="feat-card__desc" data-i18n="f3_desc">Soil testing support is on the way to help farmers understand their soil and connect results with better farm planning.</p>
-          <a class="feat-card__link" href="#/features/soil-testing" data-i18n="feat_detail">Learn more →</a>
-        </div>
-        <!-- Farm Cost & Profit -->
-        <div class="feat-card feat-card--interactive anim-fade-up" style="animation-delay:0.15s" data-feature-id="f6">
-          <div class="feat-card__icon feat-card__icon--green">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="5" y="3" width="18" height="22" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M9 10L12 13L18 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/><path d="M9 18H19M9 21H14" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/></svg>
-          </div>
-          <h3 class="feat-card__title" data-i18n="f6_title">Farm Cost &amp; Profit Estimation</h3>
-          <p class="feat-card__desc" data-i18n="f6_desc">Estimate input costs and potential revenue per crop before planting. Results are estimates based on stated inputs and assumptions.</p>
-          <a class="feat-card__link" href="#/features/profit-estimation" data-i18n="feat_detail">View details →</a>
-        </div>
-      </div>
-
-      <h2 class="features-group__title" data-i18n="feat_group2">Manage Your Farm</h2>
-      <div class="features-full-grid" id="features-grid-manage">
-        <!-- Farm Management -->
-        <div class="feat-card feat-card--interactive anim-fade-up" data-feature-id="f7">
-          <div class="feat-card__icon feat-card__icon--teal">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="5" y="3" width="18" height="22" rx="2" stroke="currentColor" stroke-width="1.8"/><rect x="8" y="7" width="12" height="6" rx="1" stroke="currentColor" stroke-width="1.8"/><path d="M9 17H11M13 17H15M17 17H19" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/></svg>
-          </div>
-          <h3 class="feat-card__title" data-i18n="f7_title">Farm Management &amp; Reminders</h3>
-          <p class="feat-card__desc" data-i18n="f7_desc">Keep digital records of farm activities, costs, yields and crop history. Set reminders for key farming tasks.</p>
-          <a class="feat-card__link" href="#/features/farm-management" data-i18n="feat_detail">View details →</a>
-        </div>
-        <!-- AI Assistant -->
-        <div class="feat-card feat-card--interactive anim-fade-up" style="animation-delay:0.05s" data-feature-id="f8">
-          <div class="feat-card__icon feat-card__icon--red">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 25V23" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/><path d="M14 23C7 23 4 16 4 9C11 9 14 16 14 23Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"/><path d="M14 23C21 23 24 16 24 9C17 9 14 16 14 23Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"/></svg>
-          </div>
-          <h3 class="feat-card__title" data-i18n="f8_title">AI Farming Assistant &amp; Crop Doctor</h3>
-          <p class="feat-card__desc" data-i18n="f8_desc">Get possible causes and guidance for crop problems. AI supports understanding and decision-making, not guaranteed diagnosis.</p>
-          <a class="feat-card__link" href="#/features/ai-assistant" data-i18n="feat_detail">View details →</a>
-        </div>
-        <!-- Organic Farming -->
-        <div class="feat-card feat-card--interactive anim-fade-up" style="animation-delay:0.1s" data-feature-id="f12">
-          <div class="feat-card__icon feat-card__icon--green">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M14 4C14 4 6 11 6 19C6 23.418 9.582 27 14 27C18.418 27 22 23.418 22 19C22 11 14 4 14 4Z" stroke="currentColor" stroke-width="1.8"/><path d="M14 11V27" stroke="currentColor" stroke-width="1.5"/></svg>
-          </div>
-          <h3 class="feat-card__title" data-i18n="f12_title">Organic Farming Support</h3>
-          <p class="feat-card__desc" data-i18n="f12_desc">Dedicated crop recommendations and farm guidance for organic cultivation — without synthetic fertilizers or pesticides.</p>
-          <a class="feat-card__link" href="#/organic-farming" data-i18n="feat_detail">View details →</a>
-        </div>
-      </div>
-
-      <h2 class="features-group__title" data-i18n="feat_group3">Access Information &amp; Resources</h2>
-      <div class="features-full-grid" id="features-grid-info">
-        <!-- Market Prices -->
-        <div class="feat-card feat-card--interactive anim-fade-up" data-feature-id="f4">
-          <div class="feat-card__icon feat-card__icon--gold">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 22L9 14L14 17L19 8L24 4" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/><path d="M20 4H24V8" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/><path d="M4 24H24" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"/></svg>
-          </div>
-          <h3 class="feat-card__title" data-i18n="f4_title">Market Prices &amp; Market Information</h3>
-          <p class="feat-card__desc" data-i18n="f4_desc">Latest available reported mandi prices with source and date context. Not a guarantee of universal real-time rates.</p>
-          <a class="feat-card__link" href="#/features/market-prices" data-i18n="feat_detail">View details →</a>
-        </div>
-        <!-- Weather -->
-        <div class="feat-card feat-card--interactive anim-fade-up" style="animation-delay:0.05s" data-feature-id="f5">
-          <div class="feat-card__icon feat-card__icon--blue">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M9.5 22C6.5 22 4 19.5 4 16.5C4 13.7 6.1 11.4 8.8 11.1C9.8 8.7 12.2 7 15 7C18.9 7 22 10.1 22 14C22 14.1 22 14.2 22 14.3C23.7 14.9 25 16.5 25 18.5C25 20.4 23.4 22 21.5 22H9.5Z" stroke="currentColor" stroke-linejoin="round" stroke-width="1.8"/></svg>
-          </div>
-          <h3 class="feat-card__title" data-i18n="f5_title">Weather Forecasts &amp; Alerts</h3>
-          <p class="feat-card__desc" data-i18n="f5_desc">Location-specific weather forecasts and farming-relevant alerts to help you plan and protect your crops.</p>
-          <a class="feat-card__link" href="#/features/weather" data-i18n="feat_detail">View details →</a>
-        </div>
-        <!-- Land Leasing -->
-        <div class="feat-card feat-card--interactive anim-fade-up" style="animation-delay:0.1s" data-feature-id="f9">
-          <div class="feat-card__icon feat-card__icon--gold">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="4" y="10" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M7 10V8C7 5.8 8.8 4 11 4H17C19.2 4 21 5.8 21 8V10" stroke="currentColor" stroke-width="1.8"/></svg>
-          </div>
-          <h3 class="feat-card__title" data-i18n="f9_title">Agricultural Land Leasing</h3>
-          <p class="feat-card__desc" data-i18n="f9_desc">Discover available agricultural land for lease or list your land. Facilitates discovery and contact — not guaranteed contracts.</p>
-          <a class="feat-card__link" href="#/features/land-leasing" data-i18n="feat_detail">View details →</a>
-        </div>
-        <!-- Equipment Sharing -->
-        <div class="feat-card feat-card--interactive anim-fade-up" style="animation-delay:0.15s" data-feature-id="f10">
-          <div class="feat-card__icon feat-card__icon--orange">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><circle cx="8" cy="19" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="20" cy="20" r="3" stroke="currentColor" stroke-width="1.8"/><path d="M4 19H3V11H21V17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg>
-          </div>
-          <h3 class="feat-card__title" data-i18n="f10_title">Equipment &amp; Resource Sharing</h3>
-          <p class="feat-card__desc" data-i18n="f10_desc">Connect with nearby farmers to share or rent agricultural equipment. Facilitates discovery — not guaranteed ownership or payment.</p>
-          <a class="feat-card__link" href="#/features/equipment-sharing" data-i18n="feat_detail">View details →</a>
-        </div>
-        <!-- Government Schemes -->
-        <div class="feat-card feat-card--interactive anim-fade-up" style="animation-delay:0.2s" data-feature-id="f11">
-          <div class="feat-card__icon feat-card__icon--green">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><path d="M4 25H24M7 25V13M21 25V13M3 13H25L14 4L3 13Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/></svg>
-          </div>
-          <h3 class="feat-card__title" data-i18n="f11_title">Government Scheme Information</h3>
-          <p class="feat-card__desc" data-i18n="f11_desc">Information about relevant agricultural government schemes and official application destinations. Does not guarantee eligibility.</p>
-          <a class="feat-card__link" href="#/features/government-schemes" data-i18n="feat_detail">View details →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-</div><!-- end page-features -->
-
-
-<!-- ============ FEATURE DETAIL PAGE (Reusable Template) ============ -->
-<div id="page-feature-detail" class="page" hidden>
-  <section class="page-hero page-hero--green" aria-labelledby="feat-detail-title">
-    <div class="container">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <a href="#/features" data-i18n="feat_breadcrumb_back">← All 12 Features</a>
-      </nav>
-      <div class="feat-detail__header-meta">
-        <span class="feat-card__coming-badge" id="featDetailBadge" hidden>Coming Soon</span>
-        <span class="page-hero__tag" id="featDetailCategory">Platform</span>
-      </div>
-      <h1 class="page-hero__title" id="feat-detail-title">Feature Title</h1>
-      <p class="page-hero__desc" id="featDetailSubtitle">Feature Tagline</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container feat-detail__layout">
-      <div class="feat-detail__main">
-        <!-- What it helps with -->
-        <div class="feat-detail__block anim-fade-up">
-          <h2 class="feat-detail__section-title" data-i18n="feat_sec_helps">What It Helps With</h2>
-          <p id="featDetailHelps" class="feat-detail__text"></p>
-        </div>
-
-        <!-- Inputs & Outputs -->
-        <div class="feat-detail__io-grid anim-fade-up">
-          <div class="feat-detail__io-card">
-            <h3 class="feat-detail__io-title" data-i18n="feat_sec_provides">What the Farmer Provides</h3>
-            <ul id="featDetailProvides" class="feat-detail__list"></ul>
-          </div>
-          <div class="feat-detail__io-card">
-            <h3 class="feat-detail__io-title" data-i18n="feat_sec_receives">What the Farmer Receives</h3>
-            <ul id="featDetailReceives" class="feat-detail__list"></ul>
-          </div>
-        </div>
-
-        <!-- 3 Steps -->
-        <div class="feat-detail__block anim-fade-up">
-          <h2 class="feat-detail__section-title" data-i18n="feat_sec_steps">How It Works in 3 Steps</h2>
-          <div id="featDetailSteps" class="feat-detail__steps"></div>
-        </div>
-
-        <!-- Illustrative Example -->
-        <div class="feat-detail__block anim-fade-up">
-          <h2 class="feat-detail__section-title" data-i18n="feat_sec_example">Illustrative Example</h2>
-          <div class="feat-detail__example-box">
-            <span class="feat-detail__example-label">Illustrative example — sample data</span>
-            <div id="featDetailExample"></div>
-          </div>
-        </div>
-
-        <!-- Limitations & Boundaries -->
-        <div class="feat-detail__block feat-detail__block--notice anim-fade-up">
-          <h2 class="feat-detail__section-title" data-i18n="feat_sec_limits">Availability &amp; Boundaries</h2>
-          <p id="featDetailLimits" class="feat-detail__text"></p>
-        </div>
-
-        <!-- Next Action -->
-        <div class="feat-detail__cta anim-fade-up" id="featDetailCtaBox">
-          <a class="btn btn--accent btn--lg" href="#/download" id="featDetailCtaBtn" data-i18n="hero_cta_primary">Download Now</a>
-          <a class="btn btn--outline btn--lg" href="#/features" data-i18n="feat_back_all">Back to All Features</a>
-        </div>
-      </div>
-
-      <!-- Sidebar with Screenshot -->
-      <aside class="feat-detail__sidebar anim-fade-up">
-        <div class="feat-detail__preview-card">
-          <div class="phone-mockup phone-mockup--android">
-            <div class="phone-mockup__camera"></div>
-            <div class="phone-mockup__screen phone-mockup__screen--img">
-              <img id="featDetailImg" src="App Images/screen-11-dashboard.png" alt="Feature screenshot illustrative data" loading="lazy"/>
-              <div class="phone-mockup__screen-label">Illustrative screen — sample data</div>
-            </div>
-          </div>
-          <p class="feat-detail__caption" id="featDetailCaption">In-app view showing feature interface</p>
-        </div>
-      </aside>
-    </div>
-  </section>
-</div><!-- end page-feature-detail -->
-
-
-<!-- ============ ABOUT PAGE ============ -->
-<div id="page-about" class="page" hidden>
-  <section class="page-hero" aria-labelledby="about-page-heading">
-    <div class="container">
-      <span class="page-hero__tag" data-i18n="about_tag">About Us</span>
-      <h1 class="page-hero__title" id="about-page-heading" data-i18n="about_title">Rooted in Gujarat. Built for better farming decisions.</h1>
-      <p class="page-hero__desc" data-i18n="about_subtitle">KisanSangam is an agriculture decision support platform built by three co-founders committed to making practical farming information accessible for Gujarat farmers.</p>
-    </div>
-  </section>
-
-  <section class="section" aria-labelledby="mission-heading">
-    <div class="container">
-      <div class="about-mission-grid">
-        <div class="about-mission-card anim-fade-up">
-          <h2 id="mission-heading" data-i18n="about_mission_title">Our Mission</h2>
-          <p data-i18n="about_mission_desc">Make practical agricultural information easier to understand and use, so farmers can plan with greater confidence.</p>
-        </div>
-        <div class="about-mission-card anim-fade-up" style="animation-delay:0.08s">
-          <h2 data-i18n="about_focus_title">Our Focus</h2>
-          <p data-i18n="about_focus_desc">Gujarat farmers, with the Narmada region as our initial area for locally supported crop information. We believe that soil, water, season and local crop evidence matter — and they vary by location. We work with that reality rather than promising coverage we don't have.</p>
-        </div>
-        <div class="about-mission-card anim-fade-up" style="animation-delay:0.16s">
-          <h2 data-i18n="about_approach_title">Our Approach</h2>
-          <p data-i18n="about_approach_desc">Farmer-first design. Transparent decision support. Multilingual from the start — English, Hindi and Gujarati. We describe what the platform does, not what we hope it will do.</p>
-        </div>
+    <!-- Hero Phone -->
+    <div class="phone-mockup phone-mockup--launch">
+      <div class="phone-mockup__notch"></div>
+      <div class="phone-mockup__screen phone-mockup__screen--img">
+        <img src="App Images/screen-11-dashboard.png" alt="KisanSangam Dashboard" loading="lazy">
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="section section--founders-full" aria-labelledby="team-heading">
-    <div class="container">
-      <div class="section__header anim-fade-up">
-        <span class="section__tag" data-i18n="founders_tag">The Team</span>
-        <h2 id="team-heading" data-i18n="about_team_title">The people behind KisanSangam</h2>
-      </div>
-      <div class="founders-grid founders-grid--about">
-        <div class="founder-card-full anim-fade-up">
-          <div class="founder-card-full__avatar"><span>MP</span></div>
-          <div class="founder-card-full__info">
-            <h3>Manav Patel</h3>
-            <p class="founder-card-full__role" data-i18n="founder_cofounder">Co-Founder</p>
-          </div>
-        </div>
-        <div class="founder-card-full anim-fade-up" style="animation-delay:0.08s">
-          <div class="founder-card-full__avatar"><span>VP</span></div>
-          <div class="founder-card-full__info">
-            <h3>Vivek Patel</h3>
-            <p class="founder-card-full__role" data-i18n="founder_cofounder">Co-Founder</p>
-          </div>
-        </div>
-        <div class="founder-card-full anim-fade-up" style="animation-delay:0.16s">
-          <div class="founder-card-full__avatar"><span>MB</span></div>
-          <div class="founder-card-full__info">
-            <h3>Meet Barot</h3>
-            <p class="founder-card-full__role" data-i18n="founder_cofounder">Co-Founder</p>
-          </div>
-        </div>
-      </div>
-      <p class="founders-portrait-note anim-fade-up" data-i18n="about_portrait_note">Founder portraits are pending. Please supply genuine photographs to be added here.</p>
+  <!-- Floating Feature Cards (positioned relative to launch__visual) -->
+  <div class="floating-card floating-card--tl">
+    <span class="floating-card__icon">🌾</span>
+    <div class="floating-card__text">
+      <strong>Crop Guide</strong>
+      <span>Wheat, Rice, Cotton</span>
     </div>
-  </section>
-
-  <section class="section section--collab" aria-label="Partnerships">
-    <div class="container">
-      <div class="collab-inner anim-fade-up">
-        <h2 data-i18n="collab_title">Work with us to support better farming decisions.</h2>
-        <p data-i18n="collab_desc">We welcome conversations with farmer groups, agricultural institutions, researchers and ecosystem partners interested in practical, locally relevant digital agriculture.</p>
-        <a class="btn btn--primary btn--lg" href="#/contact?type=collaboration" data-i18n="collab_cta">Discuss a Collaboration</a>
-      </div>
+  </div>
+  <div class="floating-card floating-card--tr">
+    <span class="floating-card__icon">☁️</span>
+    <div class="floating-card__text">
+      <strong>Weather Alert</strong>
+      <span>Protect your crops</span>
     </div>
-  </section>
-</div><!-- end page-about -->
-
-
-<!-- ============ CONTACT PAGE ============ -->
-<div id="page-contact" class="page" hidden>
-  <section class="page-hero" aria-labelledby="contact-page-heading">
-    <div class="container">
-      <span class="page-hero__tag" data-i18n="contact_tag">Get in Touch</span>
-      <h1 class="page-hero__title" id="contact-page-heading" data-i18n="contact_title">Contact KisanSangam</h1>
-      <p class="page-hero__desc" data-i18n="contact_subtitle">For product support, collaboration enquiries, or feedback. We'll respond via email.</p>
+  </div>
+  <div class="floating-card floating-card--bl">
+    <span class="floating-card__icon">📊</span>
+    <div class="floating-card__text">
+      <strong>Mandi Price</strong>
+      <span>Cotton ₹7,250/q</span>
     </div>
-  </section>
-
-  <section class="section" aria-label="Contact form and information">
-    <div class="container contact-layout">
-      <div class="contact-info anim-fade-up">
-        <div class="contact-info__block">
-          <h2 data-i18n="contact_support_title">Product Support</h2>
-          <p data-i18n="contact_support_desc">Having trouble with the app? Questions about features or installation? Use the form or email us directly.</p>
-          <a href="mailto:manavpatel.cloud@gmail.com" class="contact-info__email">manavpatel.cloud@gmail.com</a>
-          <p class="contact-info__note" data-i18n="contact_email_note">This is our current monitored contact address. A dedicated support mailbox is planned.</p>
-        </div>
-        <div class="contact-info__block">
-          <h2 data-i18n="contact_collab_title">Collaboration</h2>
-          <p data-i18n="contact_collab_desc">Interested in working with us as an agricultural institution, researcher, or ecosystem partner? We'd love to hear from you.</p>
-        </div>
-        <div class="contact-info__block">
-          <h2 data-i18n="contact_data_title">Data Requests</h2>
-          <p data-i18n="contact_data_desc">To request deletion of your personal information, use the form below or visit our <a href="#/data-request">data request page</a>.</p>
-        </div>
-      </div>
-
-      <div class="contact-form-wrapper anim-fade-up" style="animation-delay:0.1s">
-        <form class="contact-form" id="contactForm" aria-label="Contact form" novalidate>
-          <input type="hidden" name="access_key" value="7b1e9243-ed3f-4607-ba88-b0227a1d2b65"/>
-          <input type="hidden" name="subject" value="KisanSangam Website Contact"/>
-          <div class="form-group">
-            <label for="contactName" data-i18n="form_name_label">Your Name</label>
-            <input type="text" id="contactName" name="Name" placeholder="Enter your name" required autocomplete="name" data-i18n-placeholder="form_name_ph"/>
-            <span class="form-error" id="nameError" role="alert" aria-live="polite"></span>
-          </div>
-          <div class="form-group">
-            <label for="contactType" data-i18n="form_type_label">Enquiry Type</label>
-            <select id="contactType" name="Enquiry Type" required>
-              <option value="" data-i18n="form_type_default">Select enquiry type</option>
-              <option value="product-support" data-i18n="form_type_support">Product Support</option>
-              <option value="collaboration" data-i18n="form_type_collab">Collaboration</option>
-              <option value="data-request" data-i18n="form_type_data">Data Request</option>
-              <option value="other" data-i18n="form_type_other">Other</option>
-            </select>
-            <span class="form-error" id="typeError" role="alert" aria-live="polite"></span>
-          </div>
-          <div class="form-group">
-            <label for="contactEmail" data-i18n="form_email_label">Email Address <span class="form-label__required" aria-label="required">*</span></label>
-            <input type="email" id="contactEmail" name="Email" placeholder="your@email.com" required autocomplete="email" data-i18n-placeholder="form_email_ph"/>
-            <span class="form-error" id="emailError" role="alert" aria-live="polite"></span>
-          </div>
-          <div class="form-group">
-            <label for="contactMessage" data-i18n="form_message_label">Message</label>
-            <textarea id="contactMessage" name="Message" rows="4" placeholder="How can we help?" required data-i18n-placeholder="form_message_ph"></textarea>
-            <span class="form-error" id="messageError" role="alert" aria-live="polite"></span>
-          </div>
-          <p class="form-privacy" data-i18n="form_privacy">Your message will be used to respond to your enquiry and will not be shared. See our <a href="#/privacy">privacy information</a>.</p>
-          <button type="submit" class="btn btn--primary btn--lg" id="contactSubmitBtn" data-i18n="form_submit">Send Message</button>
-          <div class="form-status" id="contactFormStatus" role="status" aria-live="polite" aria-atomic="true"></div>
-        </form>
-      </div>
+  </div>
+  <div class="floating-card floating-card--br">
+    <span class="floating-card__icon">🩺</span>
+    <div class="floating-card__text">
+      <strong>AI Crop Doctor</strong>
+      <span>Instant diagnosis</span>
     </div>
-  </section>
-</div><!-- end page-contact -->
-
-
-<!-- ============ DOWNLOAD PAGE ============ -->
-<div id="page-download" class="page" hidden>
-  <section class="page-hero page-hero--green" aria-labelledby="download-page-heading">
-    <div class="container">
-      <span class="page-hero__tag" data-i18n="dl_tag">Android App</span>
-      <h1 class="page-hero__title" id="download-page-heading" data-i18n="dl_title">Download KisanSangam for Android.</h1>
-      <p class="page-hero__desc" data-i18n="dl_desc">Bring crop guidance, farm planning, weather updates and market information together on your phone.</p>
-    </div>
-  </section>
-
-  <section class="section" aria-labelledby="dl-section-heading">
-    <div class="container">
-      <div class="download-layout">
-        <div class="download-main anim-fade-up">
-          <div class="download-card">
-            <div class="download-card__status" role="status">
-              <span class="download-badge">Official Release APK</span>
-              <div class="download-card__icon" aria-hidden="true">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none"><rect x="5" y="2" width="14" height="20" rx="3" stroke="#286846" stroke-width="2"/><circle cx="12" cy="18" r="1" fill="#286846"/><path d="M12 7V13M12 13L9.5 10.5M12 13L14.5 10.5" stroke="#286846" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              </div>
-              <h2 id="dl-section-heading" class="download-card__name">KisanSangam</h2>
-              <p class="download-card__tagline" data-i18n="dl_card_tagline">Smart Farming. Better Tomorrow.</p>
-
-              <div class="download-card__action">
-                <a class="btn btn--accent btn--lg download-card__btn" id="downloadApkBtn" href="KisanSangam.apk" download="KisanSangam.apk" data-i18n="dl_btn_ready">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3V15M12 15L7 10M12 15L17 10M4 19H20" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                  <span>Download APK (145 MB)</span>
-                </a>
-              </div>
-              <p class="download-card__disclaimer" data-i18n="dl_android_only">Android only. Direct installation from official website.</p>
-            </div>
-
-            <div class="download-card__meta" id="apkMeta">
-              <div class="download-meta-item">
-                <span class="download-meta-item__label" data-i18n="dl_version_label">Version</span>
-                <span class="download-meta-item__val" id="apkVersion">v0.9.0</span>
-              </div>
-              <div class="download-meta-item">
-                <span class="download-meta-item__label" data-i18n="dl_size_label">File Size</span>
-                <span class="download-meta-item__val" id="apkSize">145 MB (152,036,070 bytes)</span>
-              </div>
-              <div class="download-meta-item">
-                <span class="download-meta-item__label" data-i18n="dl_android_req_label">Minimum Android</span>
-                <span class="download-meta-item__val" id="apkMinAndroid">Android 8.0 (Oreo) or higher</span>
-              </div>
-              <div class="download-meta-item">
-                <span class="download-meta-item__label">Application ID</span>
-                <span class="download-meta-item__val"><code>in.kisansangam.app</code></span>
-              </div>
-            </div>
-
-            <details class="download-card__tech-details">
-              <summary>Technical Details &amp; SHA-256 Checksum</summary>
-              <div class="download-tech-info">
-                <p><strong>SHA-256 Hash:</strong></p>
-                <code class="download-hash">11616A58F16AD2F1DCC616888D2BFFE1EA7EB50D1DBF3666321B52A3B77BBE67</code>
-                <p class="download-tech-note">Verify this hash using <code>Get-FileHash KisanSangam.apk</code> (PowerShell) or <code>sha256sum KisanSangam.apk</code> (Linux/Mac).</p>
-              </div>
-            </details>
-          </div>
-
-          <!-- iOS / other devices -->
-          <div class="download-ios-note anim-fade-up">
-            <h3 data-i18n="dl_ios_title">Not on Android?</h3>
-            <p data-i18n="dl_ios_desc">KisanSangam is currently Android-only. If you're on an iPhone or iPad, you can scan the QR code or share the link to download on an Android device.</p>
-          </div>
-        </div>
-
-        <div class="download-sidebar anim-fade-up" style="animation-delay:0.15s">
-          <!-- QR Code (desktop only) -->
-          <div class="download-qr" aria-label="QR code to download page">
-            <div class="download-qr__code" aria-hidden="true">
-              <svg width="130" height="130" viewBox="0 0 130 130" fill="none" aria-hidden="true">
-                <rect width="130" height="130" fill="#FFFFFF" rx="8" stroke="#DCE4D8"/>
-                <!-- Outer Finder Patterns -->
-                <rect x="12" y="12" width="32" height="32" rx="4" fill="#123D2A"/>
-                <rect x="18" y="18" width="20" height="20" rx="2" fill="#FFFFFF"/>
-                <rect x="22" y="22" width="12" height="12" rx="1" fill="#123D2A"/>
-
-                <rect x="86" y="12" width="32" height="32" rx="4" fill="#123D2A"/>
-                <rect x="92" y="18" width="20" height="20" rx="2" fill="#FFFFFF"/>
-                <rect x="96" y="22" width="12" height="12" rx="1" fill="#123D2A"/>
-
-                <rect x="12" y="86" width="32" height="32" rx="4" fill="#123D2A"/>
-                <rect x="18" y="92" width="20" height="20" rx="2" fill="#FFFFFF"/>
-                <rect x="22" y="96" width="12" height="12" rx="1" fill="#123D2A"/>
-
-                <!-- Decorative Data Blocks for scan target -->
-                <rect x="52" y="16" width="6" height="6" fill="#286846"/>
-                <rect x="64" y="16" width="6" height="6" fill="#286846"/>
-                <rect x="76" y="24" width="6" height="6" fill="#286846"/>
-                <rect x="52" y="32" width="6" height="6" fill="#286846"/>
-                <rect x="68" y="32" width="6" height="6" fill="#286846"/>
-                <rect x="20" y="52" width="6" height="6" fill="#286846"/>
-                <rect x="32" y="60" width="6" height="6" fill="#286846"/>
-                <rect x="52" y="52" width="26" height="26" rx="4" fill="#E8F0E2"/>
-                <circle cx="65" cy="65" r="7" fill="#286846"/>
-                <rect x="86" y="52" width="6" height="6" fill="#286846"/>
-                <rect x="102" y="60" width="6" height="6" fill="#286846"/>
-                <rect x="52" y="86" width="6" height="6" fill="#286846"/>
-                <rect x="64" y="94" width="6" height="6" fill="#286846"/>
-                <rect x="76" y="86" width="6" height="6" fill="#286846"/>
-                <rect x="52" y="104" width="6" height="6" fill="#286846"/>
-                <rect x="92" y="92" width="8" height="8" fill="#286846"/>
-                <rect x="106" y="104" width="8" height="8" fill="#286846"/>
-              </svg>
-            </div>
-            <p class="download-qr__label" data-i18n="dl_qr_label">Scan to open download page</p>
-            <p class="download-qr__url">kisansangam.in/#/download</p>
-          </div>
-
-          <!-- Installation help -->
-          <div class="download-install-help">
-            <h3 data-i18n="dl_install_title">Installation Help</h3>
-            <ol class="download-install-steps">
-              <li data-i18n="dl_install_1">Download the APK from this page.</li>
-              <li data-i18n="dl_install_2">Open the downloaded file on your Android device.</li>
-              <li data-i18n="dl_install_3">If prompted, allow installation from your browser for this one installation only.</li>
-              <li data-i18n="dl_install_4">Follow Android's installation prompts.</li>
-              <li data-i18n="dl_install_5">After installation, revoke the browser permission if no longer needed.</li>
-            </ol>
-            <p class="download-install-note" data-i18n="dl_install_note">Never disable Google Play Protect or ignore authenticity warnings to install this or any app. If you have trouble installing, <a href="#/contact">contact support</a>.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</div><!-- end page-download -->
-
-
-<!-- ============ ORGANIC FARMING PAGE ============ -->
-<div id="page-organic" class="page" hidden>
-  <section class="page-hero" aria-labelledby="organic-page-heading">
-    <div class="container">
-      <span class="page-hero__tag" data-i18n="organic_page_tag">Organic Farming</span>
-      <h1 class="page-hero__title" id="organic-page-heading" data-i18n="organic_page_title">A dedicated path for organic farming.</h1>
-      <p class="page-hero__desc" data-i18n="organic_page_desc">Crop recommendations and farm guidance for cultivation without synthetic chemical fertilizers or pesticides.</p>
-    </div>
-  </section>
-  <section class="section" aria-label="Organic farming details">
-    <div class="container organic-page-content">
-      <div class="organic-detail anim-fade-up">
-        <h2 data-i18n="organic_what_title">What organic support means</h2>
-        <p data-i18n="organic_what_desc">KisanSangam's organic farming support provides crop recommendations and stage-by-stage farm guidance suitable for organic cultivation — focusing on soil health, organic nutrient sources and crop-care practices that do not rely on synthetic chemical fertilizers or synthetic pesticides.</p>
-        <div class="organic-clarifier-box">
-          <p data-i18n="organic_clarifier_full">Availability of organic guidance depends on the crop and locally supported information. Organic guidance does not certify a farm or its produce. KisanSangam does not imply guaranteed organic premiums or certification eligibility.</p>
-        </div>
-      </div>
-      <div class="organic-detail anim-fade-up">
-        <h2 data-i18n="organic_how_title">How to access organic guidance</h2>
-        <ol class="organic-steps">
-          <li data-i18n="organic_step1">Download the KisanSangam Android app from our <a href="#/download">download page</a>.</li>
-          <li data-i18n="organic_step2">Set up your farm profile with your location and soil information.</li>
-          <li data-i18n="organic_step3">Select organic farming as your approach when choosing a crop.</li>
-          <li data-i18n="organic_step4">Receive recommendations and guidance suited to organic cultivation for supported crops.</li>
-        </ol>
-      </div>
-    </div>
-  </section>
-</div><!-- end page-organic -->
-
-
-<!-- ============ HOW IT WORKS PAGE ============ -->
-<div id="page-how" class="page" hidden>
-  <section class="page-hero" aria-labelledby="how-page-heading">
-    <div class="container">
-      <span class="page-hero__tag" data-i18n="how_tag">Get Started</span>
-      <h1 class="page-hero__title" id="how-page-heading" data-i18n="how_title">How KisanSangam Works</h1>
-      <p class="page-hero__desc" data-i18n="how_desc">From downloading the app to using it through the farming season — here's what to expect.</p>
-    </div>
-  </section>
-
-  <section class="section" aria-label="Getting started steps">
-    <div class="container">
-      <div class="how-steps how-steps--v2">
-        <div class="how-step-v2 anim-fade-up">
-          <div class="how-step-v2__num" aria-hidden="true">1</div>
-          <div class="how-step-v2__content">
-            <h2 data-i18n="how_step1_title">Download the Android App</h2>
-            <p data-i18n="how_step1_desc">Download the KisanSangam APK from our <a href="#/download">download page</a> and install it on your Android device. Follow the installation instructions carefully.</p>
-          </div>
-        </div>
-        <div class="how-step-v2 anim-fade-up">
-          <div class="how-step-v2__num" aria-hidden="true">2</div>
-          <div class="how-step-v2__content">
-            <h2 data-i18n="how_step2_title">Set Up Your Farm Profile</h2>
-            <p data-i18n="how_step2_desc">Enter your farm location, soil information and water availability. The more you share, the more relevant your recommendations will be — but you can start with what you have.</p>
-          </div>
-        </div>
-        <div class="how-step-v2 anim-fade-up">
-          <div class="how-step-v2__num" aria-hidden="true">3</div>
-          <div class="how-step-v2__content">
-            <h2 data-i18n="how_step3_title">Get Crop Recommendations</h2>
-            <p data-i18n="how_step3_desc">Compare suitable crops for your farm with clear reasoning for each option. Select the crop that fits your season and plans.</p>
-          </div>
-        </div>
-        <div class="how-step-v2 anim-fade-up">
-          <div class="how-step-v2__num" aria-hidden="true">4</div>
-          <div class="how-step-v2__content">
-            <h2 data-i18n="how_step4_title">Follow Your Farm Guide</h2>
-            <p data-i18n="how_step4_desc">Access your stage-by-stage cultivation guide. Return to it throughout the season for activity reminders, timing guidance and crop care instructions.</p>
-          </div>
-        </div>
-        <div class="how-step-v2 anim-fade-up">
-          <div class="how-step-v2__num" aria-hidden="true">5</div>
-          <div class="how-step-v2__content">
-            <h2 data-i18n="how_step5_title">Track Weather &amp; Markets</h2>
-            <p data-i18n="how_step5_desc">Stay updated with location-specific weather forecasts and the latest available mandi prices to help you plan your activities and selling decisions.</p>
-          </div>
-        </div>
-        <div class="how-step-v2 anim-fade-up">
-          <div class="how-step-v2__num" aria-hidden="true">6</div>
-          <div class="how-step-v2__content">
-            <h2 data-i18n="how_step6_title">Manage, Diagnose &amp; Plan</h2>
-            <p data-i18n="how_step6_desc">Use the AI Farming Assistant for crop problem guidance, keep digital farm records, estimate costs and profits, and explore government scheme information — all in one place.</p>
-          </div>
-        </div>
-      </div>
-      <div class="how-cta anim-fade-up">
-        <a class="btn btn--accent btn--lg" href="#/download" data-i18n="how_download_cta">Download for Android →</a>
-      </div>
-    </div>
-  </section>
-</div><!-- end page-how -->
-
-
-<!-- ============ PRIVACY PAGE ============ -->
-<div id="page-privacy" class="page" hidden>
-  <section class="page-hero" aria-labelledby="privacy-heading">
-    <div class="container">
-      <span class="page-hero__tag">Legal</span>
-      <h1 class="page-hero__title" id="privacy-heading" data-i18n="privacy_title">Privacy Information</h1>
-    </div>
-  </section>
-  <section class="section" aria-label="Privacy policy content">
-    <div class="container legal-content">
-      <div class="legal-notice" role="note">
-        <p data-i18n="privacy_owner_review">⚠️ Owner review required: This page requires accurate legal content including the legal entity name, data retention periods, data processor list and applicable jurisdiction. The following is a placeholder and must not be published without owner review and approval by a qualified person.</p>
-      </div>
-      <h2 data-i18n="privacy_what_title">What information we collect</h2>
-      <p data-i18n="privacy_what_desc">When you use KisanSangam, we may collect farm profile information, location data, contact information submitted via forms, and analytics data. We do not collect personal information in analytics events or URLs.</p>
-      <h2 data-i18n="privacy_how_title">How we use it</h2>
-      <p data-i18n="privacy_how_desc">Farm profile information is used to generate recommendations and guidance within the app. Contact form submissions are used to respond to your enquiry.</p>
-      <h2 data-i18n="privacy_rights_title">Your rights</h2>
-      <p data-i18n="privacy_rights_desc">You have the right to request access to, correction of, or deletion of your personal information. To make a request, use our <a href="#/data-request">data request page</a> or contact us at <a href="mailto:manavpatel.cloud@gmail.com">manavpatel.cloud@gmail.com</a>.</p>
-      <h2 data-i18n="privacy_contact_title">Contact</h2>
-      <p data-i18n="privacy_contact_desc">For privacy enquiries, contact us at <a href="mailto:manavpatel.cloud@gmail.com">manavpatel.cloud@gmail.com</a>.</p>
-      <p class="legal-review-note" data-i18n="privacy_incomplete">This privacy information is incomplete and pending owner review. It must not be treated as legally certified or production-approved until reviewed.</p>
-    </div>
-  </section>
-</div><!-- end page-privacy -->
-
-
-<!-- ============ TERMS PAGE ============ -->
-<div id="page-terms" class="page" hidden>
-  <section class="page-hero" aria-labelledby="terms-heading">
-    <div class="container">
-      <span class="page-hero__tag">Legal</span>
-      <h1 class="page-hero__title" id="terms-heading" data-i18n="terms_title">Terms of Service</h1>
-    </div>
-  </section>
-  <section class="section" aria-label="Terms of service content">
-    <div class="container legal-content">
-      <div class="legal-notice" role="note">
-        <p data-i18n="terms_owner_review">⚠️ Owner review required: This page requires accurate terms of service content. The following is a placeholder and must not be published without owner review and approval by a qualified person.</p>
-      </div>
-      <h2 data-i18n="terms_use_title">Use of the platform</h2>
-      <p data-i18n="terms_use_desc">KisanSangam provides agriculture decision support tools. Recommendations, AI guidance and estimates are decision-support tools, not guarantees of any specific outcome. You use the platform at your own discretion.</p>
-      <h2 data-i18n="terms_liability_title">Limitations</h2>
-      <p data-i18n="terms_liability_desc">KisanSangam does not guarantee specific yields, profits, prices or farming outcomes. Market prices, weather forecasts and government scheme information are provided for general information purposes.</p>
-      <p class="legal-review-note" data-i18n="terms_incomplete">These terms are incomplete and pending owner review. They must not be treated as legally certified or production-approved until reviewed.</p>
-    </div>
-  </section>
-</div><!-- end page-terms -->
-
-
-<!-- ============ DATA REQUEST PAGE ============ -->
-<div id="page-data-request" class="page" hidden>
-  <section class="page-hero" aria-labelledby="data-req-heading">
-    <div class="container">
-      <span class="page-hero__tag">Privacy</span>
-      <h1 class="page-hero__title" id="data-req-heading" data-i18n="data_req_title">Request Deletion of Your Information</h1>
-      <p class="page-hero__desc" data-i18n="data_req_desc">To request deletion of your personal information from KisanSangam, please complete the form below or email us directly.</p>
-    </div>
-  </section>
-  <section class="section" aria-label="Data request form">
-    <div class="container">
-      <div class="data-request-layout">
-        <div class="anim-fade-up">
-          <p data-i18n="data_req_intro">We will process your request and respond via email. Please provide the email address or phone number associated with your account so we can identify your data.</p>
-          <p><strong data-i18n="data_req_email_label">Email:</strong> <a href="mailto:manavpatel.cloud@gmail.com">manavpatel.cloud@gmail.com</a></p>
-        </div>
-        <form class="contact-form anim-fade-up" id="dataRequestForm" aria-label="Data deletion request form" novalidate>
-          <input type="hidden" name="access_key" value="7b1e9243-ed3f-4607-ba88-b0227a1d2b65"/>
-          <input type="hidden" name="subject" value="KisanSangam Data Deletion Request"/>
-          <div class="form-group">
-            <label for="drName" data-i18n="dr_name_label">Your Name</label>
-            <input type="text" id="drName" name="Name" required autocomplete="name" data-i18n-placeholder="form_name_ph" placeholder="Enter your name"/>
-          </div>
-          <div class="form-group">
-            <label for="drEmail" data-i18n="dr_email_label">Email Address (associated with your account)</label>
-            <input type="email" id="drEmail" name="Email" required autocomplete="email" placeholder="your@email.com"/>
-          </div>
-          <div class="form-group">
-            <label for="drDetails" data-i18n="dr_details_label">Additional Details (optional)</label>
-            <textarea id="drDetails" name="Details" rows="3" placeholder="Any additional context about your request"></textarea>
-          </div>
-          <p class="form-privacy" data-i18n="dr_privacy_note">Your request will be used only to process the deletion. See our <a href="#/privacy">privacy information</a>.</p>
-          <button type="submit" class="btn btn--primary btn--lg" id="drSubmitBtn" data-i18n="dr_submit">Submit Deletion Request</button>
-          <div class="form-status" id="dataRequestStatus" role="status" aria-live="polite" aria-atomic="true"></div>
-        </form>
-      </div>
-    </div>
-  </section>
-</div><!-- end page-data-request -->
-
-
-<!-- ============ 404 PAGE ============ -->
-<div id="page-404" class="page" hidden>
-  <section class="page-hero" aria-labelledby="notfound-heading">
-    <div class="container" style="text-align:center; padding: 80px 0;">
-      <span class="page-hero__tag">404</span>
-      <h1 class="page-hero__title" id="notfound-heading" data-i18n="notfound_title">Page not found</h1>
-      <p class="page-hero__desc" data-i18n="notfound_desc">The page you're looking for doesn't exist or may have moved.</p>
-      <a class="btn btn--primary btn--lg" href="#/home" data-i18n="notfound_home" style="margin-top: 2rem;">Go to Home</a>
-    </div>
-  </section>
-</div><!-- end page-404 -->
-
-</main>
-
-
+  </div>
+</div>
+</div>
+</section>
+<!-- ============ APP PREVIEW ============ -->
+<section class="section section--preview" id="app-preview">
+<div class="container">
+<div class="section__header anim-fade-up">
+<span class="section__tag" data-i18n="t_167">App Experience</span>
+<h2 class="section__title" data-i18n="t_168">A Glimpse of KisanSangam</h2>
+<p class="section__desc" data-i18n="t_169">Designed to be simple, intuitive, and useful — every screen is built around what farmers actually need.</p>
+</div>
+<div class="preview-carousel anim-fade-up">
+<div class="preview-track" id="previewTrack">
+<!-- Screen 1: Dashboard -->
+<div class="preview-slide">
+<div class="phone-mockup phone-mockup--preview">
+<div class="phone-mockup__notch"></div>
+<div class="phone-mockup__screen phone-mockup__screen--img">
+<img alt="KisanSangam Dashboard" loading="lazy" src="App Images/screen-11-dashboard.png"/>
+</div>
+</div>
+<span class="preview-slide__label" data-i18n="t_170">Dashboard</span>
+</div>
+<!-- Screen 2: Crop Recommendation -->
+<div class="preview-slide">
+<div class="phone-mockup phone-mockup--preview">
+<div class="phone-mockup__notch"></div>
+<div class="phone-mockup__screen phone-mockup__screen--img">
+<img alt="AI Crop Recommendations" loading="lazy" src="App Images/screen-16-top-5-crops (1)/screen-16-top-5-crops (1)-1.png"/>
+</div>
+</div>
+<span class="preview-slide__label" data-i18n="t_171">Crop Recommendation</span>
+</div>
+<!-- Screen 3: Weather -->
+<div class="preview-slide">
+<div class="phone-mockup phone-mockup--preview">
+<div class="phone-mockup__notch"></div>
+<div class="phone-mockup__screen phone-mockup__screen--img">
+<img alt="Weather Forecast &amp; Farming Advice" loading="lazy" src="App Images/weather-overview-v2 (1)/weather-overview-v2 (1)-1.png"/>
+</div>
+</div>
+<span class="preview-slide__label" data-i18n="t_172">Weather Alerts</span>
+</div>
+<!-- Screen 4: Market Prices -->
+<div class="preview-slide">
+<div class="phone-mockup phone-mockup--preview">
+<div class="phone-mockup__notch"></div>
+<div class="phone-mockup__screen phone-mockup__screen--img">
+<img alt="Live Mandi Market Prices" loading="lazy" src="App Images/market-price-overview/market-price-overview-1.png"/>
+</div>
+</div>
+<span class="preview-slide__label" data-i18n="t_173">Market Prices</span>
+</div>
+<!-- Screen 5: AI Chatbot -->
+<div class="preview-slide">
+<div class="phone-mockup phone-mockup--preview">
+<div class="phone-mockup__notch"></div>
+<div class="phone-mockup__screen phone-mockup__screen--img">
+<img alt="KS AI Crop Assistant" loading="lazy" src="App Images/chatbot-screen/chatbot-screen-1.png"/>
+</div>
+</div>
+<span class="preview-slide__label" data-i18n="t_174">AI Crop Assistant</span>
+</div>
+<!-- Screen 6: Farm Guide -->
+<div class="preview-slide">
+<div class="phone-mockup phone-mockup--preview">
+<div class="phone-mockup__notch"></div>
+<div class="phone-mockup__screen phone-mockup__screen--img">
+<img alt="Complete Crop Farming Guide" loading="lazy" src="App Images/farm-guide-screen/farm-guide-screen-1.png"/>
+</div>
+</div>
+<span class="preview-slide__label" data-i18n="t_175">Farm Guide</span>
+</div>
+<!-- Screen 7: Soil Test -->
+<div class="preview-slide">
+<div class="phone-mockup phone-mockup--preview">
+<div class="phone-mockup__notch"></div>
+<div class="phone-mockup__screen phone-mockup__screen--img">
+<img alt="Soil Test Center" loading="lazy" src="App Images/book-soil-test/book-soil-test-1.png"/>
+</div>
+</div>
+<span class="preview-slide__label" data-i18n="t_176">Soil Test</span>
+</div>
+<!-- Screen 8: Profit Estimator -->
+<div class="preview-slide">
+<div class="phone-mockup phone-mockup--preview">
+<div class="phone-mockup__notch"></div>
+<div class="phone-mockup__screen phone-mockup__screen--img">
+<img alt="Profit Report &amp; Cost Breakdown" loading="lazy" src="App Images/profit-report/profit-report-1.png"/>
+</div>
+</div>
+<span class="preview-slide__label" data-i18n="t_177">Profit Estimator</span>
+</div>
+<!-- Screen 9: Land Lease -->
+<div class="preview-slide">
+<div class="phone-mockup phone-mockup--preview">
+<div class="phone-mockup__notch"></div>
+<div class="phone-mockup__screen phone-mockup__screen--img">
+<img alt="Digital Land Leasing" loading="lazy" src="App Images/land-options/land-options-1.png"/>
+</div>
+</div>
+<span class="preview-slide__label" data-i18n="t_178">Land Lease</span>
+</div>
+<!-- Screen 10: Government Schemes -->
+<div class="preview-slide">
+<div class="phone-mockup phone-mockup--preview">
+<div class="phone-mockup__notch"></div>
+<div class="phone-mockup__screen phone-mockup__screen--img">
+<img alt="Government Schemes &amp; Subsidies" loading="lazy" src="App Images/government-schemes-listing/government-schemes-listing-1.png"/>
+</div>
+</div>
+<span class="preview-slide__label" data-i18n="t_179">Govt. Schemes</span>
+</div>
+<!-- Screen 11: Resource Sharing -->
+<div class="preview-slide">
+<div class="phone-mockup phone-mockup--preview">
+<div class="phone-mockup__notch"></div>
+<div class="phone-mockup__screen phone-mockup__screen--img">
+<img alt="Equipment Rental &amp; Sharing" loading="lazy" src="App Images/browse-rentals-mobile/browse-rentals-mobile-1.png"/>
+</div>
+</div>
+<span class="preview-slide__label" data-i18n="t_180">Resource Sharing</span>
+</div>
+<!-- Screen 12: Farm Options -->
+<div class="preview-slide">
+<div class="phone-mockup phone-mockup--preview">
+<div class="phone-mockup__notch"></div>
+<div class="phone-mockup__screen phone-mockup__screen--img">
+<img alt="My Farms Management" loading="lazy" src="App Images/screen-my-farms/screen-my-farms-1.png"/>
+</div>
+</div>
+<span class="preview-slide__label" data-i18n="t_181">My Farms</span>
+</div>
+</div>
+<div class="preview-controls">
+<button aria-label="Previous screen" class="preview-btn preview-btn--prev" id="prevBtn">
+<svg fill="none" height="20" viewbox="0 0 20 20" width="20"><path d="M12 4L6 10L12 16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<div class="preview-dots" id="previewDots">
+<span class="preview-dot active"></span>
+<span class="preview-dot"></span>
+<span class="preview-dot"></span>
+<span class="preview-dot"></span>
+<span class="preview-dot"></span>
+<span class="preview-dot"></span>
+<span class="preview-dot"></span>
+<span class="preview-dot"></span>
+<span class="preview-dot"></span>
+<span class="preview-dot"></span>
+<span class="preview-dot"></span>
+<span class="preview-dot"></span>
+</div>
+<button aria-label="Next screen" class="preview-btn preview-btn--next" id="nextBtn">
+<svg fill="none" height="20" viewbox="0 0 20 20" width="20"><path d="M8 4L14 10L8 16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- ============ CLOSING CTA ============ -->
+<section class="section section--cta" id="cta">
+<div class="container">
+<div class="cta-inner anim-fade-up">
+<h2 class="cta__title" data-i18n="t_182">Smarter Farming Starts With<br/>Better Decisions</h2>
+<p class="cta__desc" data-i18n="t_183">Join KisanSangam and be part of the future of digital agriculture. One platform. Complete farming support. Built for Indian farmers.</p>
+<div class="cta__buttons">
+<a class="btn btn--primary btn--lg" data-i18n="t_184" href="#/launching-soon">Get Launch Updates</a>
+<a class="btn btn--outline btn--lg" data-i18n="t_185" href="#/features">Explore the Ecosystem</a>
+</div>
+</div>
+</div>
+</section>
 <!-- ============ FOOTER ============ -->
 <footer class="footer" id="footer">
-  <div class="container footer__inner">
-    <div class="footer__brand">
-      <a class="footer__logo" href="#/home" aria-label="KisanSangam Home">
-        <img alt="KisanSangam Logo" class="navbar__logo-img" src="App Images/logo.jpeg" width="32" height="32"/>
-        <span>KisanSangam</span>
-      </a>
-      <p class="footer__tagline" data-i18n="footer_tagline">Smart Farming. Better Tomorrow.</p>
-      <p class="footer__desc" data-i18n="footer_desc">Agriculture decision support for Gujarat farmers. Available now for Android.</p>
-    </div>
-    <div class="footer__links">
-      <div class="footer__col">
-        <h4 data-i18n="footer_platform">Platform</h4>
-        <ul>
-          <li><a href="#/features" data-i18n="footer_features">Features</a></li>
-          <li><a href="#/how-it-works" data-i18n="footer_how">How It Works</a></li>
-          <li><a href="#/organic-farming" data-i18n="footer_organic">Organic Farming</a></li>
-          <li><a href="#/download" data-i18n="footer_download">Download the App</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4 data-i18n="footer_company">Company</h4>
-        <ul>
-          <li><a href="#/about" data-i18n="footer_about">About</a></li>
-          <li><a href="#/contact" data-i18n="footer_contact">Contact</a></li>
-          <li><a href="#/contact?type=collaboration" data-i18n="footer_collab">Collaboration</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4 data-i18n="footer_legal">Legal &amp; Privacy</h4>
-        <ul>
-          <li><a href="#/privacy" data-i18n="footer_privacy">Privacy Information</a></li>
-          <li><a href="#/terms" data-i18n="footer_terms">Terms of Service</a></li>
-          <li><a href="#/data-request" data-i18n="footer_data_req">Request Data Deletion</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4 data-i18n="footer_connect">Connect</h4>
-        <ul>
-          <li><a href="mailto:manavpatel.cloud@gmail.com" data-i18n="footer_email">manavpatel.cloud@gmail.com</a></li>
-          <li><a href="https://www.instagram.com/kisansangam.in" target="_blank" rel="noopener noreferrer" data-i18n="footer_instagram">Instagram</a></li>
-          <!-- LinkedIn removed: no verified profile. Add when verified. -->
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="footer__bottom">
-    <div class="container footer__bottom-inner">
-      <p data-i18n="footer_copy">© 2026 KisanSangam. All rights reserved.</p>
-      <p data-i18n="footer_built">Built with ❤️ for Indian farmers</p>
-    </div>
-  </div>
+<div class="container footer__inner">
+<div class="footer__brand">
+<a class="footer__logo" data-i18n="t_186" href="#/home">
+<img alt="KisanSangam Logo" class="navbar__logo-img" src="App Images/logo.jpeg"/>
+<span>KisanSangam</span>
+</a>
+<p class="footer__tagline" data-i18n="t_187">Smart Farming. Better Tomorrow.</p>
+<p class="footer__desc" data-i18n="t_188">An AI-powered digital agriculture platform supporting farmers through the complete farming lifecycle.</p>
+</div>
+<div class="footer__links">
+<div class="footer__col">
+<h4 data-i18n="t_189">Platform</h4>
+<ul>
+<li><a data-i18n="t_190" href="#/features">Features</a></li>
+<li><a data-i18n="t_191" href="#/how-it-works">How It Works</a></li>
+<li><a data-i18n="t_192" href="#/about">Ecosystem</a></li>
+<li><a data-i18n="t_193" href="#/why-kisansangam">Why KisanSangam</a></li>
+</ul>
+</div>
+<div class="footer__col">
+<h4 data-i18n="t_194">Resources</h4>
+<ul>
+<li><a data-i18n="t_195" href="#/features">Crop Guidance</a></li>
+<li><a data-i18n="t_196" href="#/features">Soil Intelligence</a></li>
+<li><a data-i18n="t_197" href="#/features">Market Prices</a></li>
+<li><a data-i18n="t_198" href="#/features">AI Crop Doctor</a></li>
+</ul>
+</div>
+<div class="footer__col">
+<h4 data-i18n="t_199">Connect</h4>
+<ul>
+<li><a data-i18n="t_200" href="#/launching-soon">Early Access</a></li>
+<li><a data-i18n="t_201" href="mailto:manavpatel.cloud@gmail.com">Contact Us</a></li>
+<li><a data-i18n="t_202" href="https://www.instagram.com/kisansangam.in?stkn=MWdwbGpmaW81c3RqOA%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+<li><a data-i18n="t_203" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer__bottom">
+<div class="container footer__bottom-inner">
+<p data-i18n="t_204">© 2026 KisanSangam. All rights reserved.</p>
+<p data-i18n="t_205">Built with ❤️ for Indian farmers</p>
+</div>
+</div>
 </footer>
-
-<!-- Feature modal (accessible) -->
-<div class="feature-modal" id="featureModal" role="dialog" aria-modal="true" aria-labelledby="featureModalTitle" hidden>
+<!-- ============ FEATURE MODAL ============ -->
+<div class="feature-modal" id="featureModal">
   <div class="feature-modal__backdrop" id="featureModalBackdrop"></div>
   <div class="feature-modal__container">
-    <button class="feature-modal__close" id="featureModalClose" aria-label="Close feature details">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <button class="feature-modal__close" id="featureModalClose" aria-label="Close modal">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </button>
     <div class="feature-modal__content">
       <div class="feature-modal__header">
-        <div class="feature-modal__icon" id="featureModalIcon" aria-hidden="true"></div>
+        <div class="feature-modal__icon" id="featureModalIcon"></div>
         <h3 class="feature-modal__title" id="featureModalTitle"></h3>
       </div>
       <div class="feature-modal__body">
@@ -1351,8 +1021,7 @@
     </div>
   </div>
 </div>
-
 <script src="translations.js"></script>
-<script src="script.js?v=3"></script>
+<script src="script.js?v=2"></script>
 </body>
 </html>
